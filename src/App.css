@@ -1,38 +1,53 @@
 .App {
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 200px;
+  padding: 20px;
+  border-radius: 20px;
+  color: black;
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Add margin for better spacing */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Gradient backgrounds for each card */
+.ai-threat {
+  background: linear-gradient(to bottom, #D3D3D3, #f9e6e0);
+}
+
+.siem {
+  background: linear-gradient(to bottom, #F4F476, #FFFF99);
+}
+
+.vapt {
+  background: linear-gradient(to bottom, #F9C446, #FFF6CC);
+}
+
+.infrastructure {
+  background: linear-gradient(to bottom, #7EB6FF, #B8DFFF);
+}
+
+.network {
+  background: linear-gradient(to bottom, #B67EC4, #E3CCFF);
 }

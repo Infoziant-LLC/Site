@@ -1,0 +1,928 @@
+
+   @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+html,body
+{
+    background-image: url('./back-img.jpg');
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    font-family: 'Jost', sans-serif;
+    margin: 0; /* Removes default margin */
+}
+
+
+/* 1 st section para,4 cards */
+  
+   .about-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+    color: #2c3e50;
+    background: linear-gradient(90deg, #15F5BA, #0066ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40, end) infinite; /* Continuous typing animation */
+    display: inline-block; /* Make sure the width is calculated based on content */
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0; /* Start with no width */
+    }
+    to {
+        width: 100%; /* Expand to full width */
+    }
+}
+
+.about-header p {
+  font-size: 1.5rem;
+  color: white;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Flexbox container */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px; /* Add gap between sections */
+  margin: 0 20px; /* Horizontal margins */
+}
+
+/* Left and right columns */
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column; /* Align sections vertically */
+  flex: 1; /* Each column takes equal space */
+  min-width: 300px; /* Minimum width for smaller screens */
+}
+
+/* Section styling */
+.section {
+  flex: 1; /* Allow sections to grow equally */
+  background-color: #ecf0f1; /* Light Gray */
+  padding: 30px; /* Increased padding for a larger appearance */
+  border-left: 13px solid #15F5BA; /* Blue */
+  box-shadow: 0px 3px 3px 0px white; /* Shadow for depth */
+  border-radius: 15px;
+  width: 100%; /* Ensure sections take full width of the column */
+  max-width: 600px; /* Set a maximum width for larger displays */
+  margin: 10px; /* Spacing between sections */
+  position: relative; /* For hover effects */
+  overflow: hidden; /* Prevent overflow */
+  background: #ecf0f1; /* Light gray background */
+  transition: transform 0.3s ease, background 0.1s ease, color 0.5s ease; /* Smooth transitions */
+}
+
+/* Hover effect for zooming */
+.section-content:hover {
+  transform: scale(1.03); /* Slight zoom effect on hover */
+}
+
+/* Section heading */
+.section h2 {
+  color: #15F5BA; /* Blue */
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Section content */
+.section-content {
+  margin-top: 10px;
+}
+
+.section-content p {
+  font-size: 1.3rem;
+  color: black;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* BounceInLeft animation */
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* BounceInRight animation */
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations to the first two sections of left and right columns */
+.left-column .section:nth-child(1),
+.left-column .section:nth-child(2) {
+  animation: bounceInLeft 1.5s ease-out forwards;
+}
+
+.right-column .section:nth-child(1),
+.right-column .section:nth-child(2) {
+  animation: bounceInRight 1.5s ease-out forwards;
+}
+
+/* Responsive Styles */
+
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+  .section {
+    max-width: 100%; /* Full width for sections */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .section h2 {
+    font-size: 1.6rem; /* Reduce heading size */
+  }
+
+  .section-content p {
+    font-size: 1.2rem; /* Reduce text size */
+  }
+
+  .flex-container {
+    margin: 0 10px; /* Reduce container margin */
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .left-column, .right-column {
+    flex: 1 1 100%; /* Stack columns vertically */
+    min-width: auto; /* Remove minimum width */
+  }
+
+  .section {
+    margin: 10px 0; /* Stack sections vertically */
+    padding: 15px; /* Further reduce padding */
+  }
+
+  .section h2 {
+    font-size: 1.4rem; /* Reduce heading size */
+  }
+
+  .section-content p {
+    font-size: 1.1rem; /* Reduce paragraph size */
+  }
+}
+
+/* For screens smaller than 576px (Mobile) */
+@media (max-width: 576px) {
+  .section {
+    padding: 10px; /* Minimal padding */
+    max-width: 100%; /* Full width */
+  }
+
+  .section h2 {
+    font-size: 1.2rem; /* Smaller headings */
+  }
+
+  .section-content p {
+    font-size: 1rem; /* Smaller paragraph font size */
+  }
+
+  .flex-container {
+    margin: 0 5px; /* Minimal margin on mobile */
+  }
+}
+
+
+
+
+
+/* Office iamge and mission css style */
+/* General Styles for the Flipper Card */
+
+.flipper-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%; /* Make the card take up full width */
+  max-width: 1600px; /* Max width for larger screens */
+  margin: 5% auto; /* Center the card horizontally */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Prevent content overflow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  position: relative;
+  background-image: url('./white-bgimage.jpg');
+  background-size: cover; /* Background covers the entire card */
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: heartbeat 5s ease infinite;
+  min-height: 400px; /* Set minimum height */
+}
+
+/* Left and Right Section Styling */
+.left-section,
+.right-section {
+  flex: 1; /* Allow both sections to take up equal space */
+  padding: 20px; /* Inner padding */
+  min-width: 50%; /* Set minimum width for responsiveness */
+  box-sizing: border-box; /* Include padding and border in width */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  background-image: url('./white-bgimage.jpg');
+}
+
+.left-section {
+  background-color: #f9f9f9; /* Light background */
+}
+
+/* Image Styling with a Hover Effect */
+.image-display {
+  max-width: 100%; /* Ensure image scales properly */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.left-section:hover .image-display {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Right Section Content */
+.right-section {
+  padding: 20px; /* General padding */
+  background-color: #f1f1f1; /* Light gray background */
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center;
+}
+
+/* Mission Text Styling */
+.mission {
+  font-size: 2.2rem; /* Large font size */
+  color: #2c3e50; /* Dark color */
+  margin-bottom: 30px; /* Space below the heading */
+  text-align: center; /* Center the heading text */
+}
+
+/* Mission List Styling */
+.mission-list {
+  list-style-type: disc; /* Use disc bullets */
+  padding-left: 20px; /* Space for bullets */
+  text-align: left; /* Align list items to the left */
+}
+
+.mission-list li {
+  font-size: 1.3rem; /* Font size for list items */
+  margin-bottom: 10px; /* Space between list items */
+  color: #34495e; /* Medium gray color */
+  font-weight: 700; /* Bold text */
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 1200px) {
+  .flipper-card {
+    flex-direction: column; /* Stack sections vertically */
+    max-width: 100%; /* Make sure it fills the screen */
+  }
+
+  .left-section, .right-section {
+    min-width: 100%; /* Each section takes up full width */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .mission {
+    font-size: 2rem; /* Slightly smaller heading font size */
+  }
+
+  .mission-list li {
+    font-size: 1.2rem; /* Adjust font size for list items */
+  }
+}
+
+@media (max-width: 768px) {
+  .flipper-card {
+    width: 90%; /* Make the card take less space */
+    margin: 5% auto; /* Less margin on smaller screens */
+  }
+
+  .mission {
+    font-size: 1.8rem; /* Decrease font size */
+  }
+
+  .mission-list li {
+    font-size: 1.1rem; /* Smaller font for list items */
+  }
+}
+
+@media (max-width: 576px) {
+  .flipper-card {
+    width: 85%; /* Further reduce the card width */
+    margin: 7% auto;
+    min-height: 300px; /* Adjust height for small screens */
+  }
+
+  .left-section, .right-section {
+    padding: 10px; /* Less padding */
+  }
+
+  .mission {
+    font-size: 1.6rem; /* Smaller heading */
+  }
+
+  .mission-list li {
+    font-size: 1rem; /* Smaller font for list items */
+  }
+
+}
+
+
+
+
+/* 5 card section key solution  */
+
+.animated-heading {
+  font-size: 2.5rem; /* Base font size */
+  animation: fadeInUp 1.5s ease-out forwards;
+  background: linear-gradient(90deg, #15F5BA, #0066ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 5%;
+}
+
+.animated-heading b {
+  font-weight: bold;
+}
+
+.animated-heading span {
+  font-weight: bold; /* Normal weight for "KEY SOLUTIONS" */
+  font-size: 35px; /* Base size */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  gap: 20px; /* Space between cards */
+}
+
+.key {
+  width: 180px; /* Base width */
+  height: 160px; /* Base height */
+  padding: 15px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+  transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+/* Shake animation on hover */
+.key:hover {
+  transform: translateY(-10px); /* Move up slightly */
+}
+
+/* Reset position when hover ends */
+.key {
+  transform: translateY(0); /* Default position */
+}
+
+/* Gradient backgrounds for each card */
+.ai-threat {
+  background: linear-gradient(to bottom, #D3D3D3, #f9e6e0);
+}
+
+.siem {
+  background: linear-gradient(to bottom, #F4F476, #FFFF99);
+}
+
+.vapt {
+  background: linear-gradient(to bottom, #F9C446, #FFF6CC);
+}
+
+.infrastructure {
+  background: linear-gradient(to bottom, #7EB6FF, #B8DFFF);
+}
+
+.network {
+  background: linear-gradient(to bottom, #B67EC4, #E3CCFF);
+}
+
+.key h3 {
+  margin: 0;
+  font-size: 16px; /* Base font size */
+  font-weight: normal; /* Normal font-weight for the rest */
+}
+
+.key h3 b {
+  font-weight: bold; /* Bold only the "AI" text */
+  font-size: 1.3rem; /* Slightly larger for emphasis */
+}
+
+.key p {
+  margin-top: 8px;
+  font-size: 20px; /* Base size for paragraphs */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .animated-heading {
+    font-size: 2rem; /* Smaller font size */
+  }
+
+  .animated-heading span {
+    font-size: 30px; /* Adjust size */
+  }
+}
+
+@media (max-width: 1000px) {
+  .cards-container {
+    flex-direction: row; /* Ensure cards are in a row */
+    justify-content: center; /* Center cards */
+  }
+
+  .key {
+    width: 160px; /* Adjust width */
+    height: 140px; /* Adjust height */
+  }
+}
+
+@media (max-width: 768px) {
+  .animated-heading {
+    font-size: 2rem; /* Further reduce font size */
+  }
+
+  .animated-heading span {
+    font-size: 25px; /* Further adjust size */
+  }
+
+  .cards-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+  }
+
+  .key {
+    width: 90%; /* Full width on smaller screens */
+    height: auto; /* Allow height to adjust automatically */
+    margin-bottom: 20px; /* Space between stacked cards */
+  }
+
+  .key h3 {
+    font-size: 14px; /* Adjust heading size */
+  }
+
+  .key p {
+    font-size: 18px; /* Adjust paragraph size */
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-heading {
+    font-size: 1.8rem; /* Smallest font size */
+    margin-top: 10%;
+  }
+
+  .animated-heading span {
+    font-size: 20px; /* Smallest size for key solutions */
+  }
+
+  .key {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Allow height to adjust automatically */
+    padding: 10px; /* Reduced padding */
+  }
+
+  .key h3 {
+    font-size: 12px; /* Adjust for mobile */
+  }
+
+  .key p {
+    font-size: 14px; /* Smaller paragraph size */
+  }
+}
+
+
+  /* General styles */
+.carousel-section h2 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #15F5BA, #0066ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 8%;
+}
+.wrapper {
+  position: relative;
+  margin: 0 5%; /* Use percentage margin for responsiveness */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 100%; /* Ensure the wrapper takes full height */
+  padding: 20px 0; /* Add some vertical padding */
+}
+
+/* Carousel container */
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  cursor: grab;
+  height: 100%; /* Ensure the carousel takes full height */
+  align-items: center; /* Center items vertically */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Individual cards */
+.card {
+  min-width: 300px; /* Smaller min-width for smaller screens */
+  width: 25%; /* Use percentage width to allow scaling */
+  max-width: 350px; /* Set a max width for larger screens */
+  margin: 0 15px; /* Set left and right margin */
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Smooth transition */
+  height: auto; /* Allow card height to be dynamic based on content */
+  display: flex;
+  flex-direction: column;
+  padding: 0; /* Ensure no padding inside the card */
+}
+
+/* Image container in the card */
+.card .img {
+  width: 100%;
+  flex-grow: 1; /* Ensure the image section grows to take available space */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Image itself */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire area without distortion */
+  display: block; /* Ensure there's no extra space below the image */
+  padding: 0; /* Remove any padding around the image */
+  margin: 0; /* Remove any margin around the image */
+}
+
+/* Enlarged card when hovering */
+.card.enlarged {
+  transform: scale(1.2); /* Scale up */
+  z-index: 10; /* Bring to front */
+}
+
+/* Hide scrollbar */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 1200px) {
+  .card {
+    width: 30%; /* Increase width percentage for mid-sized screens */
+    min-width: 280px; /* Set minimum width for cards */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 45%; /* Increase card width for smaller screens */
+    min-width: 250px; /* Set minimum width for cards */
+  }
+
+  .wrapper {
+    margin: 0 3%; /* Reduce wrapper margin */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 90%; /* Cards take up almost full width on small screens */
+    min-width: 220px; /* Set minimum width for very small screens */
+  }
+
+  .wrapper {
+    margin: 0 1%; /* Minimal margin on very small screens */
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .card {
+    min-width: 300px; /* Reduce card size */
+  }
+
+  .carousel-section h2 {
+    font-size: 2rem; /* Smaller heading size */
+  }
+
+  .wrapper {
+    margin-left: 50px; /* Less margin on smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    min-width: 250px; /* Further reduce card size */
+  }
+
+  .carousel-section h2 {
+    font-size: 1.8rem; /* Smaller heading size */
+  }
+
+  .wrapper {
+    margin-left: 20px; /* Less margin on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+  }
+
+  .card {
+    min-width: 200px; /* Further reduce card size */
+    margin: 0 15px 0 0; /* Adjust margin */
+  }
+
+  .carousel-section h2 {
+    font-size: 1.5rem; /* Smaller heading size */
+  }
+
+  .wrapper {
+    margin-left: 10px; /* Less margin on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    min-width: 150px; /* Minimum card size for mobile */
+  }
+
+  .carousel-section h2 {
+    font-size: 35px; /* Smaller heading size */
+    margin-top:15%;
+  }
+
+  .wrapper {
+    margin-left: 0; /* Remove margin for mobile */
+    padding: 0 10px; /* Add some padding */
+  }
+}
+
+  
+   /* Company logos for Appreciation*/
+   .appr-main {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.appr-main h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #15F5BA, #0066ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.appr-intro {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* Container holding the logos */
+.appr-logo-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 logos per row */
+    gap: 20px; /* Adjusted gap for even spacing */
+    background-color: #18347c;
+    width: 85%; /* Adjusted width for better alignment */
+    margin: 0 auto; /* Center the container */
+    padding: 40px 50px; /* More padding for even blue space on the sides */
+    border-radius: 25px;
+    box-sizing: border-box; /* Ensure padding is included within the width */
+}
+
+/* Individual logo container */
+.appr-logo-div div {
+    background-color: white;
+    width: 80%; /* Set to take full width of grid */
+    height: 120px; /* Set fixed height */
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin: 5px auto; /* Center grid items */
+}
+
+/* Logo image */
+.appr-logo {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.big-logo {
+  height: 150px; /* Larger height for Google and Microsoft */
+}
+
+.appr-logo:hover {
+  animation: heartbeat 1s ease infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  30%, 50%, 70% {
+    transform: scale(1.1);
+  }
+  40%, 60% {
+    transform: scale(1.05);
+  }
+}
+
+
+
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .appr-logo-div {
+        grid-template-columns: repeat(3, 1fr); /* 3 logos per row */
+        gap: 25px;
+        width: 90%; /* Increase width slightly for smaller screens */
+        padding: 30px;
+    }
+
+    .appr-logo-div div {
+        height: 110px;
+    }
+
+    .appr-logo {
+        width: 130px;
+    }
+}
+
+/* For mobile devices (landscape) */
+@media (max-width: 768px) {
+    .appr-logo-div {
+        grid-template-columns: repeat(2, 1fr); /* 2 logos per row */
+        gap: 20px;
+        width: 95%;
+        padding: 20px;
+    }
+
+    .appr-logo-div div {
+        height: 100px;
+    }
+
+    .appr-logo {
+        width: 120px;
+    }
+}
+
+/* 
+@media (max-width: 480px) {
+  .animated-heading b {
+    font-size:30px;
+  };
+  .animated-heading span
+  {
+    font-size:20px;
+  }
+} */
+/* For small mobile devices (portrait) */
+@media (max-width: 480px) {
+    .appr-logo-div {
+        grid-template-columns: 1fr; /* 1 logo per row */
+        gap: 15px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .appr-logo-div div {
+        height: 90px;
+    }
+
+    .appr-logo {
+        width:100%
+    }
+
+    .appr-intro {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: justify;
+    }
+
+    .appr-main h1 {
+        font-size: 30px;
+      
+    }
+   
+}
+/* Responsive Media Queries */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1210px) {
+.section {
+  max-width: 90%; /* Allow sections to take up more space */
+  margin: 10px auto; /* Center sections */
+}
+}
+@media (max-width: 1024px) {
+  .about-header h1 {
+      font-size: 1.6rem; /* Adjusted for smaller screens */
+  }
+
+  .about-header p {
+      font-size: 1rem; /* Adjusted for smaller screens */
+  }
+
+
+
+  .cards-container {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center cards */
+  }
+
+  .key {
+      width: 80%; /* Make cards take more width */
+      max-width: 300px; /* Set a max width for cards */
+  }
+
+  .appr-logo-div {
+      grid-template-columns: repeat(3, 1fr); /* 3 logos per row */
+      padding: 30px; /* Adjust padding */
+  }
+}
+
