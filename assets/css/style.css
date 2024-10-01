@@ -632,10 +632,10 @@ html{
     transition: all 0.3s ease-in-out;
 }
 .services_section .service_last_box {
-    border-right: none;
+    border-right: 1px solid rgba(236, 236, 248, 0.15);
 }
 .services_section .service_lower_box{
-    border-bottom: none;
+    border-bottom: 1px solid rgba(236, 236, 248, 0.15);
 }
 .services_section .services_box:hover {
     background-image: linear-gradient(46deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%);
@@ -989,7 +989,10 @@ html{
 }
 
 /* Cyber Agency Home Page Testimonial Section Style */
-
+.test-img{
+    width: 50px;
+    height: 50px;
+}
 .testimonials-section {
     padding: 145px 0 145px;
 }
