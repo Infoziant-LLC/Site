@@ -1,0 +1,555 @@
+.product-banner{
+    background: url(../images/productimages/bannerbackground.png);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Product_banner_content{
+  text-align: center;
+}
+.infz-logo{ width: 230px; filter: invert(100%) brightness(0.8) contrast(150%) hue-rotate(180deg); }
+
+.product-banner::before {
+    background: url(../images/bannerbackgroundbottom.png);
+    content: "";
+    width: 949px;
+    height: 71px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.product-banner::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: solid 28px rgb(250,250,255);
+    border-right: solid 1162px rgb(250,250,255);
+    border-left: solid 949px transparent;
+    border-top: solid 41px transparent;
+} 
+.product-banner .card-overlay{
+    background: rgba(0, 0, 0, 65%);
+}
+
+.Product_banner_content {
+    text-align: center;
+}
+
+/* Base styles for product-head */
+.product-head {
+    font-size: 3rem; /* Default size */
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) { /* Large devices */
+    .product-head {
+        font-size: 2.5rem; /* Decrease size */
+    }
+}
+
+@media (max-width: 992px) { /* Medium devices */
+    .product-head {
+        font-size: 2rem; /* Further decrease size */
+    }
+}
+
+@media (max-width: 768px) { /* Small devices */
+    .product-head {
+        font-size: 1.5rem; /* Smaller size for tablets */
+    }
+}
+
+@media (max-width: 576px) { /* Extra small devices */
+    .product-head {
+        font-size: 1.25rem; /* Even smaller size for mobile */
+    }
+}
+
+
+.comparison-section {
+    padding: 4%;
+    text-align: center;
+    background-color: var(--e-global-color-dark-blue);
+}
+.comparison-section h2{
+    color:var(  --e-global-color-accent);
+    margin-bottom: 40px;
+}
+
+.comparison-table {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.comparison-column {
+    border-radius: 10px;
+    padding:20px;
+    min-width: 30%; 
+    background: var(--e-global-color-mostly-black-blue);  
+    transition: all 0.3s ease-in-out;
+}
+
+.comparison-column h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    padding: 10px;
+    border-bottom: #57eef1 solid 3px;
+}
+
+/* Free version icon */
+.free-icon {
+    color: #4CAF50; /* Green for Free */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Premium version icon */
+.premium-icon {
+    color: #FFB300; /* Golden for Premium */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+
+.comparison-column ul {
+    list-style-type: none;
+    text-align: left;
+    color: #ffffff;
+}
+
+.comparison-column ul li {
+    margin: 15px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.comparison-column ul li span {
+    margin-right: 10px;
+}
+
+
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .comparison-table {
+        flex-direction: column;
+        gap: 30px;
+        padding: 4%;
+    }
+}
+
+
+
+
+.download-section{
+    padding: 6%;
+}
+
+.download-section h2{
+    font-size:2rem;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+  
+  .windows-logo {
+    width: 350px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+
+  
+  /* Container for download details */
+  .download-container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 3%;
+    gap: 30px;
+    width: 100%;
+  }
+/* Large Image Styling */
+.feature-img-big {
+  text-align: center;
+}
+
+.feature-img-big img {
+  max-width: 80%;
+  margin-top: 10%;
+}
+
+/* Small Image Hidden by Default */
+.feature-img-small {
+  display: none;
+  text-align: center;
+}
+
+.feature-img-small img {
+  max-width: 50%; /* Adjust the size for small screens */
+  margin-top: 5%;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .feature-img-big {
+      display: none; /* Hide big image on small screens */
+  }
+
+  .feature-img-small {
+      display: block; /* Show small image on small screens */
+  }
+}
+
+  
+  
+  /* Styling for the download box */
+  .download-box {
+    padding: 30px;
+    align-items: center;
+    border: #999 solid 1px;
+    background-color: var(--e-global-color-mostly-black-blue);
+    border-radius: 10px;
+    color:var(--e-global-color-accent);
+
+
+  }
+
+  .image-container img{
+    width:400px;
+    margin-bottom: 10px;
+}
+  .download-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+
+  }
+  
+  .download-info {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .download-info span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .download-button {
+    padding: 15px 30px;
+    border: none;
+    color: var(--e-global-color-white);
+    background-image: linear-gradient(90deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  
+  .download-button:hover {
+    color: var(--e-global-color-white);
+    background-image: linear-gradient(90deg, var(--e-global-color-accent) 0%, var(--e-global-color-secondary) 100%);
+  }
+  
+
+
+  /* System requirements box */
+  .requirements-box {
+    padding: 40px;
+    background-color: var(  --e-global-color-mostly-black-blue);
+    border-radius: 10px;
+    color:white;
+    
+  }
+  
+  .requirements-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    color:var(--e-global-color-accent);
+    font-weight: bold;
+    text-align: center;
+    border-bottom:var(--e-global-color-accent) solid;
+  }
+  
+  
+  .requirements-box ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .requirements-box ul ul {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .requirements-box p {
+    font-size: 0.9rem;
+    color: #999;
+  }
+  
+  /* Adding the Windows icon */
+
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+  
+    /* Tablet */
+    .download-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .download-box,
+    .requirements-box {
+      width: 100%;
+  
+    }
+
+  
+    .download-box h2,
+    .requirements-box h2 {
+      font-size: 1.6rem;
+    }
+  
+    .requirements-box {
+      font-size: 1rem;
+    }
+  
+    .download-info {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+  
+    /* Mobile */
+    .download-box h2,
+    .requirements-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .download-info {
+      font-size: 1rem;
+    }
+  
+    .requirements-box ul li {
+      font-size: 1rem;
+    }
+  
+    .download-button {
+      padding: 12px 25px;
+      font-size: 0.9rem;
+    }
+  
+    .windows-logo {
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+  
+    /* Small Mobile */
+    .download-container {
+      padding: 0;
+    }
+  
+    .fourth-section h1 {
+      font-size: 1.6rem;
+    }
+  
+    .download-box h2,
+    .requirements-box h2 {
+      font-size: 1rem;
+    }
+  
+    .requirements-box {
+      padding: 10px;
+    }
+  
+    .download-info {
+      font-size: 0.9rem;
+    }
+  
+    .requirements-box ul li {
+      font-size: 0.8rem;
+  
+    }
+  
+    .requirements-box ul ul {
+      margin-left: 0px;
+    }
+  
+    .download-button {
+      padding: 10px 20px;
+      font-size: 0.8rem;
+    }
+  
+    .windows-logo {
+      width: 210px;
+    }
+  }
+  
+
+/*SERVICE SECTION*/
+
+  .services-section {
+    text-align: center;
+    min-height:700px;
+
+}
+
+.services-section h1 {
+    font-size: 2.5rem;
+   
+}
+
+.services-p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-inline: 6%;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    gap:5%;
+    position: absolute;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0% 10%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for showing */
+}
+
+.services-container.active {
+    opacity: 1; /* Show the container when active */
+    
+}
+
+.slide-img {
+    max-width: 50%; /* Adjust this value for the image size */
+    margin-right: 10px; /* Space between the image and text */
+}
+
+.service-text {
+    flex-grow: 1;
+}
+
+
+
+.item-id {
+    font-size: 20px;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 50%;
+}
+.highlight{
+  color: var(--e-global-color-accent);
+}
+
+@media (max-width: 939px){
+  .services-section h1 {
+    font-size: 2rem;
+    
+   
+}
+.services-container {
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+  gap: 10%;
+}
+.services-section {
+  padding: 10%;
+  min-height: 750px;
+}
+.slide-img {
+  max-width: 50%; /* Adjust this value for the image size */
+  margin-bottom: 20px; /* Space between the image and text */
+}
+
+}
+
+@media (max-width: 1107px){
+  .services-section h1 {
+    font-size: 2rem;
+    
+   
+}
+.services-section {
+  padding: 5%;
+ 
+}
+.slide-img {
+  max-width: 50%; /* Adjust this value for the image size */
+  margin-right: 10px; /* Space between the image and text */
+}
+
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        padding: 0;
+        padding: 5%;
+        text-align: center;
+
+
+        
+    }
+    .services-section h1 {
+      font-size: 2rem;
+     
+  }
+  .services-section{
+    min-height: 800px;
+  }
+
+    .slide-img {
+        max-width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .vertical-line {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .service-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 5%;
+  }
+    .services-section h1 {
+        font-size: 1.2rem;
+    }
+
+    .services-p {
+        font-size: 14px;
+    }
+    .services-section{
+      min-height: 700px;
+    }
+
+    .services-container {
+        padding: 0 5%;
+    }
+}
+
+.highlight {
+    color: var(--e-global-color-accent);
+}
