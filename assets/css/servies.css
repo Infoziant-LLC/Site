@@ -1,0 +1,125 @@
+
+.serives-banner{
+    background: url(../images/services-Images/bg-banner/bg_banner3.png);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.serives-banner::before {
+    background: url(../images/bannerbackgroundbottom.png);
+    content: "";
+    width: 949px;
+    height: 71px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.serives-banner::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: solid 28px rgb(250,250,255);
+    border-right: solid 1162px rgb(250,250,255);
+    border-left: solid 949px transparent;
+    border-top: solid 41px transparent;
+} 
+.serives-banner .card-overlay{
+    background: rgba(0, 0, 0, 65%);
+}
+
+/* CCTV Secure Home Page FAQ Section Style */
+
+.servies_secure_faq-section{
+    position: relative;
+    padding: 13px 0 110px;
+}
+.servies_secure_faq-section .faq_content{
+    position: relative;
+    text-align: center;
+}
+.servies_secure_faq-section .faq_content h6{
+    letter-spacing: 1.6px;
+    color: var(--e-global-color-secondary);
+}
+.servies_secure_faq-section .faq_content h2{
+    margin-bottom: 48px;
+    color: var(--e-global-color-primary);
+}
+.servies_secure_faq-section .faq h4{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    display: inline-block;
+    color: var(--e-global-color-primary);
+}
+.servies_secure_faq-section .accordion-card{
+    margin-bottom: 32px;
+    width: 100%;
+    background: var(--e-global-color-white);
+    box-shadow: 6px 20px 86px rgb(248 247 255 / 100%);
+}
+.servies_secure_faq-section .accordian-inner p{
+    color: var(--e-global-color-text);
+}
+.servies_secure_faq-section .accordian-inner .card-header {
+    padding: 20px 12px 20px 26px;
+    margin-bottom: 0;
+    background: none;
+    border: none;
+}
+.servies_secure_faq-section .accordian-inner .card-body {
+    padding: 0 26px 20px;
+}
+.servies_secure_faq-section .accordion-card a.btn.btn-link:focus {
+    outline: none;
+    box-shadow: none;
+}
+.servies_secure_faq-section .accordian-inner .accordion-card i{
+    position: absolute;
+    right: 20px;
+    margin: -6px 0;
+}
+.servies_secure_faq-section .accordian-inner .accordion-card .btn {
+    padding: 0;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    color: var(--e-global-color-white);
+}
+.servies_secure_faq-section .accordion-card a.btn.btn-link {
+    position: relative;
+}
+.servies_secure_faq-section .accordion-card .btn-link:before {
+    content: "\f063";
+    position: absolute;
+    text-align: center;
+    right: 0px;
+    top: -10px;
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: linear-gradient(32deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%);
+    color: var(--e-global-color-white);
+    font-size: 18px;
+    border-radius: 100px;
+}
+.servies_secure_faq-section .accordion-card .collapsed:before {
+    content: "\f061";
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    background-image: linear-gradient(32deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%);
+    color: var(--e-global-color-white);
+    border-radius: 100px;
+    text-align: center;
+}
+
+.infz-logo{        width: 230px;      filter: invert(100%) brightness(0.8) contrast(150%) hue-rotate(180deg);  }
+ 
