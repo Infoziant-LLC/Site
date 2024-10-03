@@ -611,7 +611,7 @@ html{
 /* Cyber Agency Home Page Services Section Style */
 
 .services_section {
-    padding: 135px 0 145px;
+    padding: 55px 0 55px;
     background-color: var(--e-global-color-dark-blue);
 }
 .services_section .services_content {
@@ -708,7 +708,7 @@ html{
 /* Cyber Agency Home Page Choose Us Section Style */
 
 .chooseus_section {
-    padding: 145px 0 150px;
+    padding: 55px 0 55px;
 }
 .chooseus_section .chooseus_content h6{
     color: var(--e-global-color-secondary);
@@ -818,7 +818,7 @@ html{
 /* Cyber Agency Home Page Case Studies Section Style */
 
 .case_studies_section {
-    padding: 135px 0 185px;
+    padding: 55px 0 65px;
     background-color: var(--e-global-color-very-pale-blue);
 }
 .case_studies_section .case_studies_content h6 {
@@ -994,7 +994,7 @@ html{
     height: 50px;
 }
 .testimonials-section {
-    padding: 145px 0 145px;
+    padding: 55px 0 55px;
 }
 .testimonials-section .heading {
     margin-bottom: -8px;
@@ -1166,8 +1166,11 @@ html{
     background-color: var(--e-global-color-dark-blue);
 }
 .footer_section .about_contact_wrapper {
-    background-image: linear-gradient(46deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%);
+    background-image: linear-gradient(46deg, #170c30 0%, #2c8789 100%);
     padding: 60px 52px 55px 60px;
+}
+#currentYear{
+    color: var(--e-global-color-grayish-blue);
 }
 .footer_section .about_contact_wrapper figure {
     margin-bottom: 26px;
@@ -1353,11 +1356,17 @@ html{
 /* Cyber Security Home Page Banner Section Style */
 
 .banner-section-security {
-    background-color: var(--e-global-color-dark-blue);
+    /* background-color: var(--e-global-color-dark-blue); */
+    background-color: #101424;
     position: relative;
 }
+.highlight{
+    background: linear-gradient(90deg, #15F5BA, #0066ff); /* Neon blue gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+}
 .banner-section-security::before {
-    background: url(../images/statistics_background_layer.png);
+    /* background: url(../images/statistics_background_layer.png); */
     content: "";
     width: 100%;
     height: 100%;
@@ -3244,6 +3253,13 @@ html{
 }
 .secure_footer-section .middle-portion{
     padding: 80px 64px 68px 78px;
+}
+.infz-logo{
+    width: 230px;
+    filter: invert(100%) brightness(0.8) contrast(150%) hue-rotate(180deg);
+}
+.scanning-img{
+    height: 500px;
 }
 .secure_footer-section .middle-portion .logo-content h4{
     margin-bottom: 14px;
