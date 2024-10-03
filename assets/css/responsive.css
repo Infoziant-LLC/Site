@@ -1956,7 +1956,6 @@ h6 {font-size: 14px; line-height: 22px;}
         display: block;
     }
 }
-
 .banner-section-security .banner-section .banner_wrapper .banner-image img {
     width: 100%; /* Default to full width */
     max-width: 400px; /* Limit the maximum width */
@@ -1991,8 +1990,8 @@ h6 {font-size: 14px; line-height: 22px;}
 @media screen and (max-width: 480px) {
     .banner-section-security .banner-section .banner_wrapper .banner-image img {
         width: 250px;
-        height: 400px;;
-        margin-top: -2%;
-        margin-right: 8%;
+        height: 400px;
+        margin-top: 2%;
+        margin-left: 0;
     }
 }
