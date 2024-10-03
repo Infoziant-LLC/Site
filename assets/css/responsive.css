@@ -1956,3 +1956,43 @@ h6 {font-size: 14px; line-height: 22px;}
         display: block;
     }
 }
+
+.banner-section-security .banner-section .banner_wrapper .banner-image img {
+    width: 100%; /* Default to full width */
+    max-width: 400px; /* Limit the maximum width */
+    margin-top: -5%;
+    margin-left: 30%;
+}
+
+@media screen and (max-width: 1440px) {
+    .banner-section-security .banner-section .banner_wrapper .banner-image img {
+        width: 400px;
+        margin-top: -8%;
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner-section-security .banner-section .banner_wrapper .banner-image img {
+        width: 350px;
+        margin-top: -6%;
+        margin-left: -5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-section-security .banner-section .banner_wrapper .banner-image img {
+        width: 300px;
+        margin-top: -4%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner-section-security .banner-section .banner_wrapper .banner-image img {
+        width: 250px;
+        height: 400px;;
+        margin-top: -2%;
+        margin-right: 8%;
+    }
+}

@@ -26,25 +26,25 @@ jQuery(document).ready(function () {
 						e.appendTo(t.parent())
 					}
 				});
-				submitSignupFormNow = function (e) {
-					var t = e.serialize();
-					var n = "contact-form.php";
-					jQuery.ajax({
-						url : n,
-						type : "POST",
-						data : t,
-						success : function (e) {
-							var t = jQuery.parseJSON(e);
-							if (t.status == "Success") {
-								jQuery("#form_result").html('<span class="form-success alert alert-success d-block">' + t.msg + "</span>");
-							} else {
-								jQuery("#form_result").html('<span class="form-error alert alert-danger d-block">' + t.msg + "</span>")
-							}
-							jQuery("#form_result").show();
-						}
-					});
-					return false
-				}
+				// submitSignupFormNow = function (e) {
+				// 	var t = e.serialize();
+				// 	var n = "contact-form.php";
+				// 	jQuery.ajax({
+				// 		url : n,
+				// 		type : "POST",
+				// 		data : t,
+				// 		success : function (e) {
+				// 			var t = jQuery.parseJSON(e);
+				// 			if (t.status == "Success") {
+				// 				jQuery("#form_result").html('<span class="form-success alert alert-success d-block">' + t.msg + "</span>");
+				// 			} else {
+				// 				jQuery("#form_result").html('<span class="form-error alert alert-danger d-block">' + t.msg + "</span>")
+				// 			}
+				// 			jQuery("#form_result").show();
+				// 		}
+				// 	});
+				// 	return false
+				// }
 		}
 	});
 	
