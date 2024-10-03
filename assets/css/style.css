@@ -1165,6 +1165,7 @@ html{
 .footer_section{
     background-color: var(--e-global-color-dark-blue);
 }
+
 .footer_section .about_contact_wrapper {
     background-image: linear-gradient(46deg, #170c30 0%, #2c8789 100%);
     padding: 60px 52px 55px 60px;
@@ -1172,6 +1173,7 @@ html{
 #currentYear{
     color: var(--e-global-color-grayish-blue);
 }
+
 .footer_section .about_contact_wrapper figure {
     margin-bottom: 26px;
     display: inline-block;
@@ -4897,4 +4899,54 @@ from {
 to {
     -moz-transform: translateY(-19px);
 }
+}
+
+.award_card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.award_image img {
+    width: 100%;
+    height: auto;
+}
+
+.award_content {
+    padding: 15px;
+}
+
+.award_content h6 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.award_content h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.award_content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.read_more {
+    color: #4ee4e4; /* Update with the exact color code */
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer_section .about_contact_wrapper {
+    background-image: linear-gradient(46deg, #170c30 0%, #2c8789 100%);
+    padding: 60px 52px 55px 60px;
+}
+
+.infz-logo{
+    width: 230px;
+    filter: invert(100%) brightness(0.8) contrast(150%) hue-rotate(180deg);
 }
