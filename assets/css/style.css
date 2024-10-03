@@ -4237,12 +4237,12 @@ html{
 }
 .contact_info-section .contact-box .box-image{
     float: left;
-    width: 26%;
+
 }
 .contact_info-section .contact-box figure{
     height: 90px;
     width: 90px;
-    line-height: 90px;
+    line-height: 100px;
     top: -3px;
     position: relative;
     margin-bottom: 0;
@@ -5285,3 +5285,722 @@ to {
         font-size: 24px; /* Smaller heading size for mobile */
     }
 }
+
+/* ------contact us---- */
+.contact-banner-section-outer {
+    background: url(../images/Contact\ us\ 2.png);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-banner-section-outer::before {
+    background: url(../images/bannerbackgroundbottom.png);
+    content: "";
+    width: 949px;
+    height: 71px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.contact-banner-section-outer::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: solid 28px rgb(250, 250, 255);
+    border-right: solid 1162px rgb(250, 250, 255);
+    border-left: solid 949px transparent;
+    border-top: solid 41px transparent;
+}
+
+.contact-banner-section-outer .card-overlay {
+    background: rgba(0, 0, 0, 65%);
+}
+
+.contact_banner-section::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: solid 28px rgb(255, 255, 255);
+    border-right: solid 1162px rgb(255, 255, 255);
+    border-left: solid 949px transparent;
+    border-top: solid 41px transparent;
+}
+
+.contact_banner-section {
+    padding: 110px 0 205px;
+}
+
+.contact_banner-section .about_banner_content {
+    text-align: center;
+}
+
+.contact_banner-section .about_banner_content h1 {
+    margin-bottom: 20px;
+}
+
+.contact_banner-section .about_banner_content p {
+    margin-bottom: 32px;
+    padding: 0 260px;
+}
+
+.contact_banner-section .about_banner_content .box {
+    padding: 12px 30px;
+    text-align: center;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid rgba(250, 250, 255, 16%);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact_banner-section .about_banner_content .box a span:hover {
+    color: var(--e-global-color-accent);
+}
+
+.contact_banner-section .about_banner_content .box span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    display: inline-block;
+    color: var(--e-global-color-white);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact_banner-section .about_banner_content .box .arrow {
+    display: inline-block;
+    margin: 0 10px;
+}
+/* -------cloud security--------- */
+
+.cloud-banner-section-outer {
+    background: url(../images/cloud.jpg);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cloud-banner-section-outer::before {
+    background: url(../images/bannerbackgroundbottom.png);
+    content: "";
+    width: 949px;
+    height: 71px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.cloud-banner-section-outer::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: solid 28px rgb(250, 250, 255);
+    border-right: solid 1162px rgb(250, 250, 255);
+    border-left: solid 949px transparent;
+    border-top: solid 41px transparent;
+}
+
+.cloud-banner-section-outer .card-overlay {
+    background: rgba(0, 0, 0, 65%);
+}
+
+.cloud_banner-section::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: solid 28px rgb(255, 255, 255);
+    border-right: solid 1162px rgb(255, 255, 255);
+    border-left: solid 949px transparent;
+    border-top: solid 41px transparent;
+}
+
+.cloud_banner-section {
+    padding: 110px 0 205px;
+}
+
+.cloud_banner-section .about_banner_content {
+    text-align: center;
+}
+
+.cloud_banner-section .about_banner_content h1 {
+    margin-bottom: 20px;
+}
+
+.cloud_banner-section .about_banner_content p {
+    margin-bottom: 32px;
+    padding: 0 260px;
+}
+
+.cloud_banner-section .about_banner_content .box {
+    padding: 12px 30px;
+    text-align: center;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid rgba(250, 250, 255, 16%);
+    transition: all 0.3s ease-in-out;
+}
+
+.cloud_banner-section .about_banner_content .box a span:hover {
+    color: var(--e-global-color-accent);
+}
+
+.cloud_banner-section .about_banner_content .box span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    display: inline-block;
+    color: var(--e-global-color-white);
+    transition: all 0.3s ease-in-out;
+}
+
+.cloud_banner-section .about_banner_content .box .arrow {
+    display: inline-block;
+    margin: 0 10px;
+}
+/* ------------download page------- */
+.download-banner-section-outer {
+    background: url(../images/Banner1.png);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.download-banner-section-outer::before {
+    background: url(../images/bannerbackgroundbottom.png);
+    content: "";
+    width: 949px;
+    height: 71px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.download-banner-section-outer::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: solid 28px rgb(250, 250, 255);
+    border-right: solid 1162px rgb(250, 250, 255);
+    border-left: solid 949px transparent;
+    border-top: solid 41px transparent;
+}
+
+.download-banner-section-outer .card-overlay {
+    background: rgba(0, 0, 0, 65%);
+}
+
+.download_banner-section::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: solid 28px rgb(255, 255, 255);
+    border-right: solid 1162px rgb(255, 255, 255);
+    border-left: solid 949px transparent;
+    border-top: solid 41px transparent;
+}
+
+.download_banner-section {
+    padding: 110px 0 205px;
+}
+
+.download_banner-section .about_banner_content {
+    text-align: center;
+}
+
+.download_banner-section .about_banner_content h1 {
+    margin-bottom: 20px;
+}
+
+.download_banner-section .about_banner_content p {
+    margin-bottom: 32px;
+    padding: 0 260px;
+}
+
+.download_banner-section .about_banner_content .box {
+    padding: 12px 30px;
+    text-align: center;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid rgba(250, 250, 255, 16%);
+    transition: all 0.3s ease-in-out;
+}
+
+.download_banner-section .about_banner_content .box a span:hover {
+    color: var(--e-global-color-accent);
+}
+
+.download_banner-section .about_banner_content .box span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    display: inline-block;
+    color: var(--e-global-color-white);
+    transition: all 0.3s ease-in-out;
+}
+
+.download_banner-section .about_banner_content .box .arrow {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* ------download card------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  
+  
+  .dasttool-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin-top:auto;
+    margin-bottom:auto;
+   margin-left:80px;
+       height: 80vh;
+       
+  }
+  
+  .textSection {
+    max-width: 50%;
+  }
+  
+  .mainTitle {
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #2896FF; /* Light blue for "Infoziant Dast" */
+  }
+  
+  .highlightedTitle {
+    color: #00b7ff; /* Change to a different shade of blue */
+  }
+  
+  .descriptionText {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #c5c5c5;
+  }
+  
+  .imageSection {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .scanningImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .dasttool-title {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .textSection, .imageSection {
+      max-width: 100%;
+    }
+  
+    .mainTitle {
+      font-size: 2.5rem;
+    }
+  
+    .descriptionText {
+      font-size: 1rem;
+    }
+  }
+    
+  .container-header {
+    display: flex;
+    justify-content: center; /* Center the containers horizontally */
+    align-items: center; /* Optional: Align items vertically in case you need vertical centering */
+    gap: 20px; /* Adds space between the two containers */
+    padding: 20px; /* Optional: Adjust the spacing around the container */
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(40% - 10px); 
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .card h2 {
+    font-size: 20px; /* Smaller heading */
+    font-family: 'Jost', sans-serif;
+    margin-top: 15px; /* Adjust margins */
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    font-size: 14px; /* Smaller font for paragraph */
+    font-family: Arial, sans-serif;
+    padding: 0 10px 15px;
+    color: #555;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 150px; /* Smaller height for image */
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  
+  
+  
+  /* After 3 rd scetion css */
+  
+  
+  
+  .section-title {
+    font-size: 24px;
+    background: linear-gradient(to bottom, #0291B1, #A428B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; /* Makes the text itself transparent to show the gradient */
+    margin-bottom: 20px;
+  }
+  
+  
+  .section-description {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  
+  
+  
+  
+  .info-icon {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #007BFF;
+  }
+  
+  .info-icon:hover {
+    color: #0056b3; /* Darken color on hover */
+  }
+  
+  
+  
+  /* 
+  Download section */
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Jost', sans-serif;
+  }
+  
+  
+  .container-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #2D0A31;
+    
+  }
+  
+  .downloads-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Jost', sans-serif ;
+    text-align:center;
+    background: linear-gradient(to bottom, #0291B1, #A428B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .highlight {
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .downloads-grid {
+    display: flex;
+    justify-content: center;
+    
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+  }
+  
+  .download-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 450px;
+    text-align:center;
+  }
+  
+  .download-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .windows .card-icon {
+    color: #00ADEF;
+  }
+  
+  .download-btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn i {
+    margin-right: 8px;
+  }
+  
+  .windows-btn {
+    background: linear-gradient(to bottom, #0291B1, #A428B6);
+  }
+  
+  .download-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .system-req h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #28A745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Jost', sans-serif ;
+  }
+  .system-heading
+  {
+    text-align: left;
+  }
+  .system-req ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 5px;
+  }
+  
+  .system-req ul li {
+  
+    list-style-type: disc;
+    margin:10px;
+  }
+  
+  .system-req strong {
+    color: #333;
+  }
+  
+  
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .downloads-grid {
+        display: flex;
+        flex-direction: column;     
+        
+    }
+    .download-card
+    {
+        margin:auto;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+    .downloads-grid {
+        display: flex;
+        flex-direction: column;      
+    }
+    .download-card
+    {
+        margin:auto;
+    }
+  }
+  
+  /* 
+  Windows download page */
+  /* Container for the form and logo */
+  .form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-right:auto;/* Center the container horizontally */
+    margin-top:200px;
+    margin-left: auto;
+  }
+  
+  /* Logo Styling */
+  
+  
+  /* Form Header Styling */
+  
+  
+  .form-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 50px;
+    padding-bottom:20px;
+    border-bottom: 0.5px solid #ccc; 
+    font-family: 'Jost', sans-serif ;
+  }
+  
+  .form-container p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-family: 'Jost', sans-serif ;
+  }
+  
+  /* Email Input Field Styling */
+  .email-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+    font-family: 'Jost', sans-serif ;
+  }
+  
+  /* Submit Button Styling */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to bottom, #0291B1, #A428B6); /* Gradient background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #5A24C0;
+    font-family: 'Jost', sans-serif ;
+  }
+  
+  /* Footer Styling */
+  footer {
+    margin-top: 30px;
+    font-family: 'Jost', sans-serif ;
+  }
+  
+  .powered-by {
+    font-size: 15px;
+    color: #888;
+    text-align:center;
+  }
+  
+  .powered-by .icon {
+    font-size: 14px;
+  }
+  
+  .powered-by a {
+    color: #888;
+    text-decoration: none;
+  }
+  
+  .powered-by a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Background Color for Parent Element */
+  /* .container-background {
+    
+    padding: 100px 0; 
+    min-height: 100vh; 
+  } */
+  
+  @media (max-width: 768px) {
+    .form-container {
+        width: 90%; /* Reduce form width for smaller screens */
+        margin-top: 100px; /* Adjust margin-top to fit screen */
+    }
+  
+    .form-container h2 {
+        font-size: 20px; /* Smaller font size for headings */
+        margin-bottom: 30px; /* Reduce space between header and content */
+    }
+  
+    .email-input, .submit-btn {
+        font-size: 14px; /* Smaller input and button text */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .powered-by {
+        font-size: 14px; /* Smaller font for footer text */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-container {
+        width: 95%; /* Further reduce form width for very small screens */
+        padding: 30px; /* Adjust padding */
+    }
+  
+    .form-container h2 {
+        font-size: 18px; /* Further reduce heading font size */
+        margin-bottom: 20px; /* Reduce margin-bottom */
+    }
+  
+    .email-input, .submit-btn {
+        padding: 8px; /* Adjust padding for small screens */
+    }
+  
+    .powered-by {
+        font-size: 13px; /* Smaller footer text */
+        color:white;
+    }
+  }
