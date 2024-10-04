@@ -1897,7 +1897,7 @@ h6 {font-size: 14px; line-height: 22px;}
 .servicepage_service-section .service_content h2 {margin-bottom: 25px;}
 .servicepage_service-section .service_boxcontent {width: 330px; margin: 0 auto 15px;}
 .servicepage_service-section .service_boxcontent .upper_portion .service-image {background: transparent; text-align: center;}
-.servicepage_service-section .service_boxcontent .upper_portion .service-image .article_img {width: auto;}
+.servicepage_service-section .service_boxcontent .upper_portion .service-image .article_img {width: ;}
 /* Project page */
 .project_portfolio-section .case_studies_content h2 {margin-bottom: 20px;}
 .project_portfolio-section .case_studies_box{width: 330px; margin: 0 auto 15px;}
