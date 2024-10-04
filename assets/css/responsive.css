@@ -1580,7 +1580,7 @@ p {font-size: 14px; line-height: 22px;}
 .contact_info-section .contact_info_content h2 {margin-bottom: 25px;}
 .contact_info-section .contact-box {padding: 20px 0; text-align: center;}
 .contact_info-section .contact-box .box-image {float: none; width: 100%;}
-.contact_info-section .contact-box figure {height: 65px; width: 65px; line-height: 65px; display: inline-block;}
+.contact_info-section .contact-box figure {height: 65px; width: 65px; line-height: 75px; display: inline-block;}
 .contact_info-section .contact-box figure img {width: 24px;}
 .contact_info-section .contact-box .box-content {padding: 0;}
 .contact_map_section iframe {height: 350px;}
