@@ -627,15 +627,15 @@ html{
 }
 .services_section .services_box {
     padding: 45px 45px 35px;
-    border-right: 1px solid rgba(236, 236, 248, 0.15);
-    border-bottom: 1px solid rgba(236, 236, 248, 0.15);
+    border: 1px solid rgba(236, 236, 248, 0.15);
+    border: 1px solid rgba(236, 236, 248, 0.15);
     transition: all 0.3s ease-in-out;
 }
 .services_section .service_last_box {
-    border-right: 1px solid rgba(236, 236, 248, 0.15);
+    border: 1px solid rgba(236, 236, 248, 0.15);
 }
 .services_section .service_lower_box{
-    border-bottom: 1px solid rgba(236, 236, 248, 0.15);
+    border: 1px solid rgba(236, 236, 248, 0.15);
 }
 .services_section .services_box:hover {
     background-image: linear-gradient(46deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%);
@@ -2859,7 +2859,7 @@ html{
     padding-bottom: 36px;
     margin-bottom: 32px;
     display: flex;
-    border-bottom: 1px solid rgba(236, 236, 248, 0.15);
+    border: 1px solid rgba(236, 236, 248, 0.15);
 }
 .secure_provide-section .secure_provide_content ul li figure{
     position: relative;
@@ -5745,10 +5745,7 @@ to {
     color: transparent;
   }
   
-  .highlight {
-    color: #007BFF;
-    font-weight: bold;
-  }
+
   
   .downloads-grid {
     display: flex;

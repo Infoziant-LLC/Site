@@ -728,7 +728,7 @@ button:focus {outline: none;}
 .services_section .services_content h6 {margin-bottom: 5px;}
 .services_section .services_content h2 {margin-bottom: 30px;}
 .services_section .services_box {padding: 30px 20px; border: 1px solid rgba(236, 236, 248, 0.15);}
-.services_section .second_row .services_box {border-bottom: 1px solid rgba(236, 236, 248, 0.15);}  
+.services_section .second_row .services_box {border: 1px solid rgba(236, 236, 248, 0.15);}  
 .services_section .services_box figure {margin-bottom: 15px;}
 .services_section .services_box h4 {margin-bottom: 5px;} 
 .services_section .services_box p {margin-bottom: 15px;}

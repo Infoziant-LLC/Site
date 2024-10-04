@@ -39,7 +39,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 
     <style>
-    
+        
+    </style>
+    <style>
+    .services_section .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+       /* Add border to each service box */
+        padding: 15px; /* Optional: Add padding for better spacing */
+        box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    }
+
+    .services_box .icon {
+        flex-grow: 1;
+    }
+
+    .services_box h4, .services_box p, .services_box a {
+        margin-bottom: 10px;
+    }
     </style>
 </head>
 
