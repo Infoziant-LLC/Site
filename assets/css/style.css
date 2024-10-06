@@ -427,9 +427,33 @@ html{
 }
 
 /* Cyber Agency Home Page Banner Section Style */
+.typing-anm
+{
+    color:white;
+    width:1000px;
+    font-size: 70px;
+    margin-bottom:30px;
+}
+.banner-discount {
+    color: white;
+    padding: 1% 1%; 
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 40px;
+    font-size: 6px; /* Rounded corners */
+    text-align: center; /* Center the text */
+}
 
-.banner-section-outer .banner-section{
+  
+
+.banner-section-outer .banner-section {
     padding: 172px 280px 265px;
+}
+.banner-content{
+    margin-left: -17%;
 }
 .banner-section-outer .banner-section .banner-content h6 {
     letter-spacing: 1.6px;
@@ -1359,14 +1383,14 @@ html{
 
 .banner-section-security {
     /* background-color: var(--e-global-color-dark-blue); */
-    background-color: #101424;
+    /* background-color: #101424; */
+    /* background: url("./assets/images/Home-video-3.mp4"); */
     position: relative;
+    width: 100%;
+    height: 100vh;
+   
 }
-.highlight{
-    background: linear-gradient(90deg, #15F5BA, #0066ff); /* Neon blue gradient */
-  -webkit-background-clip: text;
-  color: transparent;
-}
+
 .banner-section-security::before {
     /* background: url(../images/statistics_background_layer.png); */
     content: "";
@@ -1397,11 +1421,31 @@ html{
 .banner-section-security .banner-section{
     padding: 192px 280px 230px;
 }
+
+/* Banner in center */
+
+.banner-section .row {
+    display: flex;
+    justify-content: center; /* Center the entire content horizontally */
+}
+
+.banner_content-section {          
+    margin: 0 auto; /* Ensure it's centered */
+}
+
+.banner-section .banner-content {
+    display: inline-block; /* Ensures the content doesn't stretch unnecessarily */
+    width: 100%; /* Make sure it fills the width */
+    position: absolute;
+    z-index:3;
+}
+
 .banner-section-security .banner-section .banner-content h6 {
     letter-spacing: 1.6px;
     margin-bottom: 12px;
     position: relative;
     padding-left: 70px;
+    text-align:left;
 }
 .banner-section-security .banner-section .banner-content h6::before {
     content: "";
@@ -1415,10 +1459,14 @@ html{
 }
 .banner-section-security .banner-section .banner-content h1 {
     font-size: 68px;
-    line-height: 74px;
-    margin-bottom: 22px;
+    line-height: 90px;
+    margin-bottom: 30px;
     margin-right: -20px;
+    width:100%;
+    margin-top:10px;
+    text-align: left;   
 }
+
 .banner-section-security .banner-section .banner-content p {
     padding-right: 30px;
     margin-bottom: 30px;
@@ -6002,3 +6050,89 @@ to {
         color:white;
     }
   }
+
+/* 
+  video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  
+   
+} */
+
+.video-shadow {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .video-overlay {   position: absolute;
+       top: 0; 
+         left: 0; 
+           width: 100%;
+           height: 100vh;  
+         background: rgba(0, 0, 0, 0.6); 
+         z-index: 2; 
+         pointer-events: none; 
+
+  }
+
+   
+  .video-shadow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity to make it dimmer */
+    z-index: 2;
+    pointer-events: none; /* To ensure the video controls (if any) are still clickable */
+  }
+
+
+
+ .highlight {
+    background: linear-gradient(90deg, #15F5BA, #0066ff); /* Neon blue gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top:25px;
+}
+
+/* #banner-text{
+    font-size: 80px;
+} */
+
+.typing-text {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 0; /* Start with width 0 */
+    font-weight: bold;
+    animation: typing 9s steps(22) infinite; /* Infinite typing animation */
+    height:60px;
+    margin-top:10px;
+    font-size:70px;
+}
+
+/* Typing keyframes */
+@keyframes typing {
+    0% { width: 0; }
+    20% { width: 12ch; }  /* 'cybersecurity' */
+    35% { width: 12ch; }
+    50% { width: 0; }     /* Hide the text */
+    55% { width: 8ch; }   /* 'scanning' */
+    70% { width: 8ch; }
+    85% { width: 0; }     /* Hide the text */
+    90% { width: 14ch; }  /* 'vulnerabilities' */
+    100% { width: 14ch; }
+}
+
+/* Optional: remove any downward movement or opacity changes */
