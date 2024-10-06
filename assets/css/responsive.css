@@ -728,7 +728,7 @@ button:focus {outline: none;}
 .services_section .services_content h6 {margin-bottom: 5px;}
 .services_section .services_content h2 {margin-bottom: 30px;}
 .services_section .services_box {padding: 30px 20px; border: 1px solid rgba(236, 236, 248, 0.15);}
-.services_section .second_row .services_box {border-bottom: 1px solid rgba(236, 236, 248, 0.15);}  
+.services_section .second_row .services_box {border: 1px solid rgba(236, 236, 248, 0.15);}  
 .services_section .services_box figure {margin-bottom: 15px;}
 .services_section .services_box h4 {margin-bottom: 5px;} 
 .services_section .services_box p {margin-bottom: 15px;}
@@ -1580,7 +1580,7 @@ p {font-size: 14px; line-height: 22px;}
 .contact_info-section .contact_info_content h2 {margin-bottom: 25px;}
 .contact_info-section .contact-box {padding: 20px 0; text-align: center;}
 .contact_info-section .contact-box .box-image {float: none; width: 100%;}
-.contact_info-section .contact-box figure {height: 65px; width: 65px; line-height: 65px; display: inline-block;}
+.contact_info-section .contact-box figure {height: 65px; width: 65px; line-height: 75px; display: inline-block;}
 .contact_info-section .contact-box figure img {width: 24px;}
 .contact_info-section .contact-box .box-content {padding: 0;}
 .contact_map_section iframe {height: 350px;}
@@ -1907,7 +1907,7 @@ h6 {font-size: 14px; line-height: 22px;}
 .servicepage_service-section .service_content h2 {margin-bottom: 25px;}
 .servicepage_service-section .service_boxcontent {width: 330px; margin: 0 auto 15px;}
 .servicepage_service-section .service_boxcontent .upper_portion .service-image {background: transparent; text-align: center;}
-.servicepage_service-section .service_boxcontent .upper_portion .service-image .article_img {width: auto;}
+.servicepage_service-section .service_boxcontent .upper_portion .service-image .article_img {width: ;}
 /* Project page */
 .project_portfolio-section .case_studies_content h2 {margin-bottom: 20px;}
 .project_portfolio-section .case_studies_box{width: 330px; margin: 0 auto 15px;}
