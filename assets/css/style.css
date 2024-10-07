@@ -4471,9 +4471,7 @@ html{
     margin-right: 10px;
 }
 .single_service .main-box .text1{
-    text-align:justify;
-    line-height: 26px;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
 }
 .single_service .main-box .text2{
     margin-bottom: 20px;
@@ -4483,10 +4481,9 @@ html{
 }
 .single_service .main-box .list li {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 24px;
     font-weight: 400;
     margin-bottom: 4px;
-    text-align:justify;
     padding-left: 28px;
     position: relative;
     color: var(--e-global-color-primary);
@@ -5083,12 +5080,10 @@ to {
     align-items: center;
     background-color: #ffffff33;
     text-align: center;
-  
-    border-radius: 10px;
+    border-radius: 5px;
     color: rgb(255, 255, 255);
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
-    box-shadow: 0 0px 10px rgba(21, 245, 186, 1), 0 0 5px rgba(0, 102, 255, 0.8);
-    background-color: #0e1625;
+    box-shadow: 0 0 5px rgba(21, 245, 186, 1), 0 0 5px rgba(0, 102, 255, 0.8);
 }
 
 /* Shake animation on hover */
@@ -5101,21 +5096,18 @@ to {
     margin: 0;
     font-size: 15px; /* Base font size */
     font-weight: normal; /* Normal font-weight for the rest */
-    color:white;
 }
 
 .key h3 b {
     font-weight: bold; /* Bold only the "AI" text */
     font-size: 1.3rem; /* Slightly larger for emphasis */
     color: var(--e-global-color-primary);
-    color:white;
 }
 
 .key p {
     margin-top: 8px;
     font-size: 18px; /* Base size for paragraphs */
     color: var(--e-global-color-text);
-    color:white;
 }
 
 /* Responsive Styles */
@@ -5225,7 +5217,7 @@ to {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 logos per row */
     gap: 20px; /* Adjusted gap for even spacing */
-    background-color: #0e1625;
+    background-color: #18347c;
     /* background-image: linear-gradient(32deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%); */
     /* box-shadow: 0 0 6px rgba(21, 245, 186, 0.8), 0 0 6px rgba(0, 102, 255, 0.8); */
     width: 85%; /* Adjusted width for better alignment */
@@ -5233,7 +5225,6 @@ to {
     padding: 40px 50px; /* More padding for even blue space on the sides */
     border-radius: 25px;
     box-sizing: border-box; /* Ensure padding is included within the width */
-    box-shadow: 0 0px 10px rgba(21, 245, 186, 1), 0 0 5px rgba(0, 102, 255, 0.8);
 }
 
 /* Individual logo container */
