@@ -429,10 +429,11 @@ html{
 /* Cyber Agency Home Page Banner Section Style */
 .typing-anm
 {
-    color:white;
-    width:1000px;
-    font-size: 70px;
-    margin-bottom:30px;
+    color: white;
+    width: 560px;
+    font-size: 50px;
+    margin-bottom: 0px;
+    line-height: 50px;
 }
 .banner-discount {
     color: white;
@@ -453,7 +454,7 @@ html{
     padding: 172px 280px 265px;
 }
 .banner-content{
-    margin-left: -17%;
+    margin-left: -55%;
 }
 .banner-section-outer .banner-section .banner-content h6 {
     letter-spacing: 1.6px;
@@ -1435,7 +1436,7 @@ html{
 
 .banner-section .banner-content {
     display: inline-block; /* Ensures the content doesn't stretch unnecessarily */
-    width: 100%; /* Make sure it fills the width */
+    width: 60%; /* Make sure it fills the width */
     position: absolute;
     z-index:3;
 }
@@ -4060,6 +4061,9 @@ html{
     text-align: center;
     padding-top: 18px;
 }
+.btn_wrapper{
+    display: flex;
+}
 
 /* Project PopUp Style */
 
@@ -6063,6 +6067,43 @@ to {
    
 } */
 
+.get-started-btn{
+    background: linear-gradient(90deg, #15F5BA, #0066ff);
+    color: black;
+    border: none;
+    font-size: 15px;
+    padding: 4% 6%;
+    margin-right: 4%;
+    text-align: center;
+}
+
+.get-started-btn a{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.learn-more-btn a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.get-started-btn:hover{
+    background: linear-gradient(90deg, #0faf84, #0149b4);
+}
+.learn-more-btn:hover{
+    background-color: rgb(204, 202, 202);
+}
+
+.learn-more-btn{
+    background: transparent;
+    border: 2px solid white;
+    font-size: 15px;
+    padding: 4% 6%;
+    margin-right: 4%;
+}
+
 .video-shadow {
     position: absolute;
     z-index: -1;
@@ -6071,6 +6112,7 @@ to {
     left: 0;
     height: 100vh;
     width: 100%;
+    background-color: pink;
   }
 
   .video-overlay {   position: absolute;
@@ -6119,7 +6161,7 @@ to {
     animation: typing 9s steps(22) infinite; /* Infinite typing animation */
     height:60px;
     margin-top:10px;
-    font-size:70px;
+    font-size:55px;
 }
 
 /* Typing keyframes */
