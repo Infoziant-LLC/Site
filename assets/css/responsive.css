@@ -120,7 +120,7 @@ h1 {font-size: 60px; line-height: 70px;}
 .banner-section-security .banner_right_shape img {width: 300px;}
 .banner-section-security .banner-section {padding: 120px 80px 140px;}
 .banner-section-security .banner-section .banner-content h1 {font-size: 50px; line-height: 68px; margin-right: 0;}
-.banner-section-security .banner-section .banner-content p {padding-right: 0;}
+.banner-section-security .banner-section .banner-content p {padding-right: 0; width: 560px;}
 .banner-section-security .banner-section .banner_wrapper .banner-image {top: -4px; right: -50px;}
 .banner-section-security .banner-section .banner_wrapper .banner-image img {width: 400px; margin-top: -8%; margin-left: -10%;}
 .cyber_security_services_section {padding: 120px 0;}
@@ -1907,7 +1907,7 @@ h6 {font-size: 14px; line-height: 22px;}
 .servicepage_service-section .service_content h2 {margin-bottom: 25px;}
 .servicepage_service-section .service_boxcontent {width: 330px; margin: 0 auto 15px;}
 .servicepage_service-section .service_boxcontent .upper_portion .service-image {background: transparent; text-align: center;}
-.servicepage_service-section .service_boxcontent .upper_portion .service-image .article_img {width: ;}
+.servicepage_service-section .service_boxcontent .upper_portion .service-image .article_img {}
 /* Project page */
 .project_portfolio-section .case_studies_content h2 {margin-bottom: 20px;}
 .project_portfolio-section .case_studies_box{width: 330px; margin: 0 auto 15px;}
