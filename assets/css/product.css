@@ -447,12 +447,12 @@
 
 
 
-.item-id {
+/* .item-id {
     font-size: 20px;
     padding: 5px 10px;
     color: #fff;
     border-radius: 50%;
-}
+} */
 .highlight{
   color: var(--e-global-color-accent);
 }
