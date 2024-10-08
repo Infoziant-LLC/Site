@@ -1947,6 +1947,12 @@ h6 {font-size: 14px; line-height: 22px;}
 #button {width: 55px; height: 55px; right: 35px; bottom: 35px;}
 }
 
+@media(max-width:400px){
+    .services-section{
+        display: none;
+    }
+}
+
 @media(max-width:300px){
     .banner-section-security .banner-section .banner_wrapper .banner-image img {
         width: 100%;

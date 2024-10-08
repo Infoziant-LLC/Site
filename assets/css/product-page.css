@@ -1,4 +1,6 @@
-
+html, body {
+    overflow-x: hidden;
+}
 .services-section {
     text-align: center;
     height: 120vh;
@@ -75,8 +77,64 @@
     line-height: 30px;
 }
 
+.cards-section-m{
+    display: none;
+}
+
+/* mobile view */
+
+.card-m {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 5%;
+}
+
+.card-m:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+}
+
+.card-image-m {
+    width: 100%;
+    height: 200px; /* You can adjust this height */
+    object-fit: fill; /* Ensures the full image is displayed within the card */
+    background-color: #f4f4f4; /* Optional: add background color for empty space */
+}
+
+.card-heading-m {
+    font-size: 19px;
+    margin-left: 15px;
+    color: #333;
+}
+
+.card-content-m {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: #555;
+}
+
+
 @media (max-width: 400px) {
     .services-section {
         display: none;
+    }
+    .cards-section-m {
+        display: block;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Makes cards responsive */
+        gap: 20px;
+    }
+    .card-content-m {
+        font-size: 0.9rem;
+    }
+    .services-p{
+        width: 100%;
+        line-height: 23px;
+    }
+    .head-m{
+        font-size: 20px;
+        margin-left: 5%;
+        line-height: 30px;
     }
 }

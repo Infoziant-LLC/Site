@@ -72,4 +72,5 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.5 }); // Set threshold to determine when to trigger
 
+
 observer.observe(servicesSection);

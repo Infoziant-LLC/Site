@@ -8,7 +8,7 @@
 .Product_banner_content{
   text-align: center;
 }
-.infz-logo{ width: 230px; filter: invert(100%) brightness(0.8) contrast(150%) hue-rotate(180deg); }
+.infz-logo{ width: 230px; }
 
 .product-banner::before {
     background: url(../images/bannerbackgroundbottom.png);
@@ -415,7 +415,6 @@
 
 .services-p {
     font-size: 18px;
-    margin-bottom: 30px;
     padding-inline: 6%;
 }
 
