@@ -8,7 +8,9 @@
 .Product_banner_content{
   text-align: center;
 }
+
 .infz-logo{ width: 230px; }
+
 
 .product-banner::before {
     background: url(../images/bannerbackgroundbottom.png);

@@ -430,9 +430,7 @@ html{
 
 /* Cyber Agency Home Page Banner Section Style */
 
-.banner-section-outer .banner-section{
-    padding: 172px 280px 265px;
-}
+
 .banner-section-outer .banner-section .banner-content h6 {
     letter-spacing: 1.6px;
     margin-bottom: 12px;
@@ -497,7 +495,7 @@ html{
 /* Cyber Agency Home Page About Us Section Style */
 
 .aboutus_section {
-    padding: 136px 0 180px;
+    padding: 100px 0 180px;
 }
 .aboutus_section .aboutus_images_wrapper{
     position: relative;
@@ -1364,8 +1362,9 @@ html{
     
 }
 .highlight{
-    background-color: #FF3CAC;
-background-image: linear-gradient(225deg, #3c4cff 0%, #b199c5 50%, #0968ac 100%);
+    background-color: #0093E9;
+    background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
+    
 
 /* Neon blue gradient */
   -webkit-background-clip: text;
@@ -3260,10 +3259,12 @@ background-image: linear-gradient(225deg, #3c4cff 0%, #b199c5 50%, #0968ac 100%)
 .secure_footer-section .middle-portion{
     padding: 80px 64px 68px 78px;
 }
-.infz-logo{
+.infz-logo {
     width: 230px;
-    /* filter: invert(100%) brightness(0.8) contrast(150%) hue-rotate(180deg); */
-}
+
+    filter: invert(0%) brightness(0.8) contrast(120%) hue-rotate(180deg);
+
+
 .scanning-img{
     height: 500px;
 }
@@ -4952,9 +4953,11 @@ to {
     padding: 60px 52px 55px 60px;
 }
 
-.infz-logo{
+.infz-logo {
     width: 230px;
-    /* filter: invert(100%) brightness(0.8) contrast(150%) hue-rotate(180deg); */
+
+    filter: invert(0%) brightness(0.8) contrast(120%) hue-rotate(180deg);
+
 }
 
 
@@ -4989,12 +4992,12 @@ to {
     border: 2 px solid transparent;
 }
 /* Infoziant logo */
-.infz-logo{
+.infz-logo {
     width: 230px;
-    /* filter: invert(100%) brightness(0.8) contrast(150%) hue-rotate(180deg); */
-}
 
-/* Testimonial image */
+    filter: brightness(5.2) contrast(100%);
+
+}
 .test-img
 {
     width:50px;
@@ -5184,7 +5187,7 @@ to {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 logos per row */
     gap: 20px; /* Adjusted gap for even spacing */
-    background-color: #18347c;
+    background-color: #0E1625;
     /* background-image: linear-gradient(32deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%); */
     /* box-shadow: 0 0 6px rgba(21, 245, 186, 0.8), 0 0 6px rgba(0, 102, 255, 0.8); */
     width: 85%; /* Adjusted width for better alignment */
