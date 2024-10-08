@@ -145,12 +145,13 @@ a {
     padding: 20px 42px;
     display: inline-block;
     color: var(--e-global-color-white);
-    background-image: linear-gradient(90deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%);
+    background-color: #0093E9; /* New background color */
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); /* New gradient */
     transition: all 0.3s ease-in-out;
 }
 .default-btn:hover {
     color: var(--e-global-color-white);
-    background-image: linear-gradient(90deg, var(--e-global-color-accent) 0%, var(--e-global-color-secondary) 100%);
+    background-image: linear-gradient(160deg, #80D0C7 0%, #0093E9 100%); /* Adjusted hover gradient */
 }
 .hover-effect {
     transition: all 0.3s ease-in-out;
@@ -427,34 +428,8 @@ html{
 }
 
 /* Cyber Agency Home Page Banner Section Style */
-.typing-anm
-{
-    color:white;
-    width:1000px;
-    font-size: 70px;
-    margin-bottom:30px;
-}
-.banner-discount {
-    color: white;
-    padding: 1% 1%; 
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    height: 40px;
-    font-size: 6px; /* Rounded corners */
-    text-align: center; /* Center the text */
-}
 
-  
 
-.banner-section-outer .banner-section {
-    padding: 172px 280px 265px;
-}
-.banner-content{
-    margin-left: -17%;
-}
 .banner-section-outer .banner-section .banner-content h6 {
     letter-spacing: 1.6px;
     margin-bottom: 12px;
@@ -519,7 +494,7 @@ html{
 /* Cyber Agency Home Page About Us Section Style */
 
 .aboutus_section {
-    padding: 136px 0 180px;
+    padding: 100px 0 180px;
 }
 .aboutus_section .aboutus_images_wrapper{
     position: relative;
@@ -1384,14 +1359,17 @@ html{
 
 .banner-section-security {
     /* background-color: var(--e-global-color-dark-blue); */
-    /* background-color: #101424; */
-    /* background: url("./assets/images/Home-video-3.mp4"); */
-    position: relative;
-    width: 100%;
-    height: 100vh;
-   
+    
 }
+.highlight{
+    background-color: #0093E9;
+    background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
+    
 
+/* Neon blue gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+}
 .banner-section-security::before {
     /* background: url(../images/statistics_background_layer.png); */
     content: "";
@@ -1422,31 +1400,11 @@ html{
 .banner-section-security .banner-section{
     padding: 192px 280px 230px;
 }
-
-/* Banner in center */
-
-.banner-section .row {
-    display: flex;
-    justify-content: center; /* Center the entire content horizontally */
-}
-
-.banner_content-section {          
-    margin: 0 auto; /* Ensure it's centered */
-}
-
-.banner-section .banner-content {
-    display: inline-block; /* Ensures the content doesn't stretch unnecessarily */
-    width: 100%; /* Make sure it fills the width */
-    position: absolute;
-    z-index:3;
-}
-
 .banner-section-security .banner-section .banner-content h6 {
     letter-spacing: 1.6px;
     margin-bottom: 12px;
     position: relative;
     padding-left: 70px;
-    text-align:left;
 }
 .banner-section-security .banner-section .banner-content h6::before {
     content: "";
@@ -1460,14 +1418,10 @@ html{
 }
 .banner-section-security .banner-section .banner-content h1 {
     font-size: 68px;
-    line-height: 90px;
-    margin-bottom: 30px;
+    line-height: 74px;
+    margin-bottom: 22px;
     margin-right: -20px;
-    width:100%;
-    margin-top:10px;
-    text-align: left;   
 }
-
 .banner-section-security .banner-section .banner-content p {
     padding-right: 30px;
     margin-bottom: 30px;
@@ -3305,10 +3259,11 @@ html{
 .secure_footer-section .middle-portion{
     padding: 80px 64px 68px 78px;
 }
-.infz-logo{
+.infz-logo {
     width: 230px;
-    filter: invert(100%) brightness(0.8) contrast(150%) hue-rotate(180deg);
+    filter: invert(0%) brightness(0.8) contrast(120%) hue-rotate(180deg);
 }
+
 .scanning-img{
     height: 500px;
 }
@@ -4468,9 +4423,7 @@ html{
     margin-right: 10px;
 }
 .single_service .main-box .text1{
-    text-align:justify;
-    line-height: 26px;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
 }
 .single_service .main-box .text2{
     margin-bottom: 20px;
@@ -4480,10 +4433,9 @@ html{
 }
 .single_service .main-box .list li {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 24px;
     font-weight: 400;
     margin-bottom: 4px;
-    text-align:justify;
     padding-left: 28px;
     position: relative;
     color: var(--e-global-color-primary);
@@ -5000,9 +4952,9 @@ to {
     padding: 60px 52px 55px 60px;
 }
 
-.infz-logo{
+.infz-logo {
     width: 230px;
-    filter: invert(100%) brightness(0.8) contrast(150%) hue-rotate(180deg);
+    filter: invert(0%) brightness(0.8) contrast(120%) hue-rotate(180deg);
 }
 
 
@@ -5023,12 +4975,10 @@ to {
 }
 
 /* Infoziant logo */
-.infz-logo{
+.infz-logo {
     width: 230px;
-    filter: invert(100%) brightness(0.8) contrast(150%) hue-rotate(180deg);
+    filter: brightness(5.2) contrast(100%);
 }
-
-/* Testimonial image */
 .test-img
 {
     width:50px;
@@ -5081,12 +5031,10 @@ to {
     align-items: center;
     background-color: #ffffff33;
     text-align: center;
-  
-    border-radius: 10px;
+    border-radius: 5px;
     color: rgb(255, 255, 255);
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
-    box-shadow: 0 0px 10px rgba(21, 245, 186, 1), 0 0 5px rgba(0, 102, 255, 0.8);
-    background-color: #0e1625;
+    box-shadow: 0 0 5px rgba(21, 245, 186, 1), 0 0 5px rgba(0, 102, 255, 0.8);
 }
 
 /* Shake animation on hover */
@@ -5099,21 +5047,18 @@ to {
     margin: 0;
     font-size: 15px; /* Base font size */
     font-weight: normal; /* Normal font-weight for the rest */
-    color:white;
 }
 
 .key h3 b {
     font-weight: bold; /* Bold only the "AI" text */
     font-size: 1.3rem; /* Slightly larger for emphasis */
     color: var(--e-global-color-primary);
-    color:white;
 }
 
 .key p {
     margin-top: 8px;
     font-size: 18px; /* Base size for paragraphs */
     color: var(--e-global-color-text);
-    color:white;
 }
 
 /* Responsive Styles */
@@ -5223,7 +5168,7 @@ to {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 logos per row */
     gap: 20px; /* Adjusted gap for even spacing */
-    background-color: #0e1625;
+    background-color: #0E1625;
     /* background-image: linear-gradient(32deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%); */
     /* box-shadow: 0 0 6px rgba(21, 245, 186, 0.8), 0 0 6px rgba(0, 102, 255, 0.8); */
     width: 85%; /* Adjusted width for better alignment */
@@ -5231,7 +5176,6 @@ to {
     padding: 40px 50px; /* More padding for even blue space on the sides */
     border-radius: 25px;
     box-sizing: border-box; /* Ensure padding is included within the width */
-    box-shadow: 0 0px 10px rgba(21, 245, 186, 1), 0 0 5px rgba(0, 102, 255, 0.8);
 }
 
 /* Individual logo container */
@@ -6060,6 +6004,7 @@ to {
         font-size: 13px; /* Smaller footer text */
         color:white;
     }
+
   }
 
 /* 
@@ -6153,4 +6098,5 @@ to {
     background: url('../images/Managed-Security-banner.png') no-repeat center center !important;
     background-size: cover !important;   
 }
+
 

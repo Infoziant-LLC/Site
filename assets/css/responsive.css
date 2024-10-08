@@ -104,7 +104,7 @@ h1 {font-size: 60px; line-height: 70px;}
 .banner-section-outer .banner-section {padding: 130px 80px 190px;}
 .banner-section-outer .banner-section .banner-content p {padding-right: 0;}
 .left_icons {left: -80px; top: 90px;}
-.aboutus_section {padding: 55px 0 75px;}
+.aboutus_section {padding: px 0 75px;}
 .aboutus_section .aboutus_right_shape {top: 70px;}  
 .aboutus_section .aboutus_right_shape img {width: 150px;}
 .aboutus_section .aboutus_content {padding-top: 82px;}
@@ -1191,7 +1191,7 @@ button:focus {outline: none;}
 }
 @media screen and (max-width: 767px){
 h1 {font-size: 34px; line-height: 40px;}
-h2 {font-size: 28px; line-height: 34px;text-align: left;}
+h2 {font-size: 28px; line-height: 34px;}
 h3 {font-size: 18px; line-height: 30px;}
 h6 {letter-spacing: 0 !important;}
 p {font-size: 14px; line-height: 22px;}
@@ -1213,7 +1213,7 @@ p {font-size: 14px; line-height: 22px;}
 .banner-section-outer .banner-section .banner-content .btn_wrapper a {margin-right: 8px;}
 .banner-section-outer .banner-section .banner-content .btn_wrapper .play-icon {padding-left: 52px;}
 .banner-section-outer .banner-section .banner-content .btn_wrapper .play-icon figure {height: 44px; width: 44px; line-height: 40px; top: -15px;}
-.aboutus_section {padding: 35px 0 60px;}
+.aboutus_section {padding: 100px 0 60px;}
 .aboutus_section .aboutus_images_wrapper {margin-bottom: 50px;}
 .aboutus_section .aboutus_images_wrapper .aboutus_image_one {left: -120px;}
 .aboutus_section .aboutus_images_wrapper .aboutus_image_one img {width: 200px;}
@@ -1615,20 +1615,10 @@ p {font-size: 14px; line-height: 22px;}
 #button::after {font-size: 18px; line-height: 18px;}
 .column3{margin: 0 auto;}
 }
-
-@media only screen and  (max-width: 1200px) {
-    .banner-section-security 
-    {
-     
-      height: 50vh;
-    }
-    
-  }
-
 @media screen and (max-width: 575px){
-h1 {font-size: 30px; line-height: 36px;text-align: left;}
-h2 {font-size: 22px; line-height: 28px;margin-top:50px;}
-h3 {font-size: 16px; line-height: 26px;text-align:left}
+h1 {font-size: 30px; line-height: 36px;}
+h2 {font-size: 22px; line-height: 28px;}
+h3 {font-size: 16px; line-height: 26px;}
 h6 {font-size: 14px; line-height: 22px;}
 .text-size-16 {font-size: 14px; line-height: 22px;}
 .default-btn {padding: 12px 20px;}
@@ -1718,7 +1708,7 @@ h6 {font-size: 14px; line-height: 22px;}
 .footer_section .bottom_portion .copyright {padding: 10px 0;}
 .footer_section .bottom_portion .copyright p {font-size: 10px; line-height: 20px;}
 /* Home2 */
-.banner-section-security .banner-section {padding: 35px 15px 40px;}
+.banner-section-security .banner-section {        padding: 120px 15px 110px;    }
 .banner-section-security .banner-section .banner-content{text-align: center;}
 .banner-section-security .banner-section .banner-content h6{margin-bottom: 6px; padding: 0;}
 .banner-section-security .banner-section .banner-content h6::before {display: none;}
@@ -2004,29 +1994,5 @@ h6 {font-size: 14px; line-height: 22px;}
         height: 400px;
         margin-top: 2%;
         margin-left: 0;
-    }
-}
-
-@media(max-width:400px){
-    .banner-content{
-        margin-left: 0;
-    }
-    .typing-anm{
-        font-size: 7vw;
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
-    .typing-text{
-        font-size: 8vw;
-        height: 50px;
-    }
-    .aboutus_section{
-        margin-top: 70%;
-    }
-    .highlight{
-        margin-top: 0;
-    }
-    .video-shadow, .video-overlay{
-        height: 75vh;
     }
 }
