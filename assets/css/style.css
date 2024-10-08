@@ -958,6 +958,7 @@ html{
     outline: none;
 }
 
+
 /* Cyber Agency Home Page Video Section Style */
 
 .video_section {
@@ -5020,6 +5021,7 @@ to {
     background-size: cover; /* Ensure the image covers the container */
    
 }
+
 /* Infoziant logo */
 .infz-logo{
     width: 230px;
@@ -6145,3 +6147,10 @@ to {
 }
 
 /* Optional: remove any downward movement or opacity changes */
+
+
+.back-img {
+    background: url('../images/Managed-Security-banner.png') no-repeat center center !important;
+    background-size: cover !important;   
+}
+
