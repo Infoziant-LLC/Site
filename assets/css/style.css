@@ -1363,8 +1363,9 @@ html{
     
 }
 .highlight{
-    background-color: #FF3CAC;
-background-image: linear-gradient(225deg, #3c4cff 0%, #b199c5 50%, #0968ac 100%);
+    background-color: #0093E9;
+    background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
+    
 
 /* Neon blue gradient */
   -webkit-background-clip: text;
