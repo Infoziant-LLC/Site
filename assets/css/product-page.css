@@ -81,6 +81,30 @@ html, body {
     display: none;
 }
 
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -9%;
+    margin-bottom: 5%;
+}
+
+.nav-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 10px; /* Add space between the buttons */
+}
+
+.nav-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
 /* mobile view */
 
 .card-m {
