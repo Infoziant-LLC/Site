@@ -1708,15 +1708,15 @@ h6 {font-size: 14px; line-height: 22px;}
 .footer_section .bottom_portion .copyright {padding: 10px 0;}
 .footer_section .bottom_portion .copyright p {font-size: 10px; line-height: 20px;}
 /* Home2 */
-.banner-section-security .banner-section {        padding: 120px 15px 110px;    }
+.banner-section-security .banner-section {        padding:100px 15px 110px;    }
 .banner-section-security .banner-section .banner-content{text-align: center;}
 .banner-section-security .banner-section .banner-content h6{margin-bottom: 6px; padding: 0;}
 .banner-section-security .banner-section .banner-content h6::before {display: none;}
-.banner-section-security .banner-section .banner-content h1 {font-size: 50px; line-height: 56px; margin-right: 0; margin-bottom: 30px; margin-top: 30px;}
+.banner-section-security .banner-section .banner-content h1 {font-size: 40px; line-height: 56px; margin-right: 0; margin-bottom: 30px; margin-top: 30px;}
 .chick {font-size: 15px; padding-bottom: 15px;}
 .banner-section-security .banner-section .banner-content p {margin-bottom: 15px;}
-.banner-section-security .banner-section .banner-content .btn_wrapper {margin-top: 30px;}   
-.banner-section-security .banner-section .banner-content .btn_wrapper a {margin-right: 5px; }
+.banner-section-security .banner-section .banner-content .btn_wrapper {margin-bottom: 30px;}   
+.banner-section-security .banner-section .banner-content .btn_wrapper a {margin-right: 5px; margin-left: 20px;}
 .banner-section-security .banner-section .banner-content .btn_wrapper .learn_more {padding: 11px 20px; }
 
 .trusted_section {padding: 55px 0 35px;}
