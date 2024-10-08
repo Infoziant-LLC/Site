@@ -198,7 +198,7 @@ html{
     border-top: solid 42px transparent;
 } 
 .main_header {
-    padding: 40px 280px 40px 280px;
+    padding: 10px 60px;
     position: relative;
     z-index: 2;
 }
@@ -229,7 +229,7 @@ html{
     font-size: 14px;
     line-height: 14px;
     font-weight: 500;
-    color: var(--e-global-color-white) !important;
+    color: black;
     transition: all 0.3s ease-in-out;
 }
 .navbar-nav .nav-item a:hover{
@@ -238,6 +238,7 @@ html{
 }
 .navbar-nav .active > a{
     color: var(--e-global-color-accent) !important;
+    font-weight: 600 !important;
 }
 .navbar-collapse .drop-down-pages {
     text-align: left;
@@ -3260,8 +3261,9 @@ html{
 }
 .infz-logo {
     width: 230px;
+
     filter: invert(0%) brightness(0.8) contrast(120%) hue-rotate(180deg);
-}
+
 
 .scanning-img{
     height: 500px;
@@ -4953,7 +4955,9 @@ to {
 
 .infz-logo {
     width: 230px;
+
     filter: invert(0%) brightness(0.8) contrast(120%) hue-rotate(180deg);
+
 }
 
 
@@ -4972,10 +4976,27 @@ to {
     background-size: cover; /* Ensure the image covers the container */
    
 }
+
+.get-started-btn{
+    border: 2px solid white;
+    background: transparent;
+    padding: 2% 1% 2% 3%;
+    font-weight: 600;
+}
+.get-started-btn a{
+    color: white;
+    text-decoration: none;
+}
+.get-started-btn:hover{
+    background: linear-gradient(90deg, #15F5BA, #0066ff);
+    border: 2 px solid transparent;
+}
 /* Infoziant logo */
 .infz-logo {
     width: 230px;
+
     filter: brightness(5.2) contrast(100%);
+
 }
 .test-img
 {
