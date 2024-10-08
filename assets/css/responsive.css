@@ -10,7 +10,7 @@
 .banner-section-secure .main_header{max-width: 1920px; margin: auto;}
 }
 @media screen and (max-width: 1899px) {
-.main_header {padding: 40px 225px; background-color: white;}
+.main_header {padding: 40px 225px;}
 .left_icons {left: -180px;}
 .banner-section-outer .banner-section {padding: 172px 215px 265px;}
 /* Home2 */
@@ -36,7 +36,7 @@
 .about_cyber-section .provide-logo {right: -270px;}
 }
 @media screen and (max-width: 1682px) {
-.main_header {padding: 10px 60px; background-color: white;}
+.main_header {padding: 40px 146px;}
 .left_icons {left: -125px;}
 .banner-section-outer .banner-section {padding: 172px 140px 265px;}
 /* Home2 */
@@ -59,7 +59,7 @@
 .banner-section-security .banner-section .banner_wrapper .banner-image {top: -90px; right: -120px;}
 }
 @media screen and (max-width: 1532px) {
-.main_header {padding: 10px 60px;}
+.main_header {padding: 40px 110px;}
 .left_icons {left: -95px;}
 .banner-section-outer .banner-section {padding: 172px 105px 265px;}
 /* Home2 */
@@ -95,7 +95,7 @@
 }
 @media screen and (max-width: 1440px){
 h1 {font-size: 60px; line-height: 70px;}
-.main_header {padding: 10px 60px;}
+.main_header {padding: 30px 60px;}
 .navbar-nav li {margin: 0 10px 0 15px;}
 .outer_div {margin-left: 25px;}
 .outer_div .icon {padding: 0px 10px;}
@@ -1897,7 +1897,7 @@ h6 {font-size: 14px; line-height: 22px;}
 .servicepage_service-section .service_content h2 {margin-bottom: 25px;}
 .servicepage_service-section .service_boxcontent {width: 330px; margin: 0 auto 15px;}
 .servicepage_service-section .service_boxcontent .upper_portion .service-image {background: transparent; text-align: center;}
-.servicepage_service-section .service_boxcontent .upper_portion .service-image .article_img {}
+.servicepage_service-section .service_boxcontent .upper_portion .service-image .article_img {width: ;}
 /* Project page */
 .project_portfolio-section .case_studies_content h2 {margin-bottom: 20px;}
 .project_portfolio-section .case_studies_box{width: 330px; margin: 0 auto 15px;}
@@ -1945,12 +1945,6 @@ h6 {font-size: 14px; line-height: 22px;}
 .single_service .all_feed {width: 270px;}
 /* Back to top button */
 #button {width: 55px; height: 55px; right: 35px; bottom: 35px;}
-}
-
-@media(max-width:400px){
-    .services-section{
-        display: none;
-    }
 }
 
 @media(max-width:300px){

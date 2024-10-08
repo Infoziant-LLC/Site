@@ -9,9 +9,6 @@
   text-align: center;
 }
 
-.infz-logo{ width: 230px; }
-
-
 .product-banner::before {
     background: url(../images/bannerbackgroundbottom.png);
     content: "";
@@ -417,6 +414,7 @@
 
 .services-p {
     font-size: 18px;
+    margin-bottom: 30px;
     padding-inline: 6%;
 }
 
@@ -448,12 +446,12 @@
 
 
 
-/* .item-id {
+.item-id {
     font-size: 20px;
     padding: 5px 10px;
     color: #fff;
     border-radius: 50%;
-} */
+}
 .highlight{
   color: var(--e-global-color-accent);
 }
