@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/favicon/infoziant-favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/infoziant-favicon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/infoziant-favicon.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/infoziant-favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/infoziant-favicon.png">
@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- StyleSheet link CSS -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/product-page.css" rel="stylesheet" type="text/css">
     <link href="assets/css/product.css" rel="stylesheet" type="text/css">
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
     <link href="assets/css/special-classes.css" rel="stylesheet" type="text/css">
@@ -49,25 +50,31 @@
                 <div class="main_header">
                     <div class="container-fluid">
                         <nav class="navbar navbar-expand-lg navbar-light p-0">
-                            <a class="navbar-brand" href="index.html"><figure class="logo mb-0"><img class="infz-logo" src="./assets/images/infoziant-logo.png" alt="" class="img-fluid"></figure></a>
-                            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                            <span class="navbar-toggler-icon"></span>
-                            <span class="navbar-toggler-icon"></span>
+                            <a class="navbar-brand" href="index.html">
+                                <figure class="logo mb-0"><img class="infz-logo"
+                                        src="./assets/images/infoziant-logo.png" alt="" class="img-fluid"></figure>
+                            </a>
+                            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item">
                                         <a class="nav-link" href="index.html">Home</a>
-                                    </li>   
+                                    </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="about.html">About</a>
-                                    </li>                            
+                                    </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="service.html">Services</a>
                                     </li>
                                     <li class="nav-item dropdown active">
-                                        <a class="nav-link navbar-text-color" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        <a class="nav-link navbar-text-color" href="#" id="navbarDropdown2"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false"> Product </a>
                                     </li>
                                     <li class="nav-item">
@@ -231,66 +238,64 @@
     </section>
     <!--PRODUCT TOOL -->
     <br><br>
-    <section class="services-section">
 
+    <section id="services-section" class="services-section">
         <h1>Empowering <span class="highlight">Smart Contract Security</span> with Cutting-Edge Features</h1>
-        <p class="services-p">Our AI-powered tool is packed with a diverse set of robust features designed to cater to
-            the unique requirements of Smart Contract Vulnerability Detection across organizations of all sizes in the
-            web3 ecosystem.</p>
+        <p class="services-p">Our AI powered tool is packed with a diverse set of robust features designed to cater the
+            unique requirements of Smart Contract Vulnerability Detection across organizations of all sizes in the web3
+            ecosystem.</p>
         <br />
-        <!-- First Service Container -->
         <div class="services-container">
-            <img class="slide-img" src="./assets/images/productimages/Dashboard.png" alt="Managed Security Services">
+            <img id="service-image" class="slide-img" src="./assets/images/slide-1.png" alt="Managed Security Services">
             <div class="vertical-line">
-                <span class="item-id" style="background-color: #36f56c;">1</span>
+                <span id="item-id" class="item-id" style="background-color: #85EBF9">1</span>
             </div>
-            <div class="service-text">
+            <div id="service-text" class="service-text">
                 <h3>Dashboard</h3>
                 <p>Get a comprehensive overview of your application's security status with real-time metrics and
                     insights. Easily track ongoing scans and vulnerability trends at a glance.</p>
             </div>
         </div>
-
-        <!-- Second Service Container -->
-        <div class="services-container">
-            <img class="slide-img" src="./assets/images/productimages/vulnarabilites.png" alt="AI-Powered Vulnerability Detection">
-            <div class="vertical-line">
-                <span class="item-id" style="background-color: #9e4bec;">2</span>
-            </div>
-            <div class="service-text">
-                <h3>Vulnerabilities</h3>
-                <p>Identify and prioritize security vulnerabilities with detailed risk assessments. Each issue is
-                    categorized by severity, helping you focus on the most critical threats.</p>
-            </div>
-        </div>
-
-        <!-- Third Service Container -->
-        <div class="services-container">
-            <img class="slide-img" src="./assets/images/productimages/Scan.png" alt="Real-Time Monitoring">
-            <div class="vertical-line">
-                <span class="item-id" style="background-color: #3eefff;">3</span>
-            </div>
-            <div class="service-text">
-                <h3>Scanning</h3>
-                <p>Our DAST tool performs automated, deep scans across your applications to uncover potential
-                    vulnerabilities. Monitor the scanning progress in real-time for complete visibility.</p>
-            </div>
-        </div>
-
-        <!-- Fourth Service Container -->
-        <div class="services-container">
-            <img class="slide-img" src="./assets/images/productimages/Report.png" alt="Comprehensive Reporting">
-            <div class="vertical-line">
-                <span class="item-id" style="background-color: #FFC300;">4</span>
-            </div>
-            <div class="service-text">
-                <h3>Reports</h3>
-                <p>Generate in-depth, customizable security reports with actionable insights. Our reports provide clear
-                    recommendations to remediate vulnerabilities and strengthen your defenses.</p>
-            </div>
-        </div>
-
     </section>
+
+     <!-- Services Section for Mobile -->
+     <section class="cards-section-m">
+        <h1 class="head-m">Empowering <span class="highlight">Smart Contract Security</span> with Cutting-Edge Features</h1>
+        <p class="services-p">Our AI powered tool is packed with a diverse set of robust features designed to cater the
+            unique requirements of Smart Contract Vulnerability Detection across organizations of all sizes in the web3
+            ecosystem.</p>
+        <br />
+        <div class="card-m">
+            <img src="./assets/images/slide-1.png" alt="Card Image" class="card-image-m">
+            <h1 class="card-heading-m">Dashboard</h1>
+            <p class="card-content-m">Get a comprehensive overview of your application's security status with
+                real-time metrics and insights. Easily track ongoing scans and vulnerability trends at a glance.</p>
+        </div>
+
+        <div class="card-m">
+            <img src="./assets/images/slide-2.png" alt="Card Image" class="card-image-m">
+            <h1 class="card-heading-m">Scanning</h1>
+            <p class="card-content-m">Our DAST tool performs automated, deep scans across your applications to
+                uncover potential vulnerabilities. Monitor the scanning progress in real-time for complete
+                visibility.</p>
+        </div>
+
+        <div class="card-m">
+            <img src="./assets/images/slide-3.png" alt="Card Image" class="card-image-m">
+            <h1 class="card-heading-m">Vulnerabilities</h1>
+            <p class="card-content-m">Identify and prioritize security vulnerabilities with detailed risk
+                assessments. Each issue is categorized by severity, helping you focus on the most critical threats.
+            </p>
+        </div>
+
+        <div class="card-m">
+            <img src="./assets/images/slide-4.png" alt="Card Image" class="card-image-m">
+            <h1 class="card-heading-m">Report</h1>
+            <p class="card-content-m">Generate in-depth, customizable security reports with actionable insights. Our
+                reports provide clear recommendations to remediate vulnerabilities and strengthen your defenses.</p>
+        </div>
+    </section>
+
 
     <!-- COMPARISON SECTION -->
     <section class="comparison-section statistics_section">
@@ -480,25 +485,31 @@
                         <div class="about_contact_wrapper">
                             <a href="index.html">
                                 <figure>
-                                    <img class="infz-logo" src="assets/images/infoziant-logo.png" alt="" class="img-fluid">
+                                    <img class="infz-logo" src="assets/images/infoziant-logo.png" alt=""
+                                        class="img-fluid">
                                 </figure>
                             </a>
-                           
+
                             <ul class="list-unstyled mb-0">
                                 <li>
                                     <i class="fa-solid fa-phone"></i>
-                                    <a href="tel:+13147320300" class="text-decoration-none">+1 (314) 732 0300, </a><br> <!-- US Contact -->
-                                    <a href="tel:+919600085988" class="text-decoration-none">+91 96000 85988</a> <!-- India Contact -->
+                                    <a href="tel:+13147320300" class="text-decoration-none">+1 (314) 732 0300, </a><br>
+                                    <!-- US Contact -->
+                                    <a href="tel:+919600085988" class="text-decoration-none">+91 96000 85988</a>
+                                    <!-- India Contact -->
                                 </li>
                                 <li class="contact_mail">
                                     <i class="fa-sharp fa-solid fa-envelope"></i>
-                                    <a href="support@infoziant.com" class="text-decoration-none">support@infoziant.com</a>
+                                    <a href="support@infoziant.com"
+                                        class="text-decoration-none">support@infoziant.com</a>
                                 </li>
                                 <li class="mb-0 location">
                                     <i class="fa-solid fa-location-dot location"></i>
-                                    <span class="text-size-14"><b>India Office:</b> Akshaya HQ, Rajiv Gandhi Salai, Kazhipattur, Tamil Nadu, Chennai - 603103, India</span>
-                                   
-                                    <span class="text-size-14"><b>U.S. Office:</b> 1401, 21st ST STE 6310, Sacramento, CA 95811, USA</span>
+                                    <span class="text-size-14"><b>India Office:</b> Akshaya HQ, Rajiv Gandhi Salai,
+                                        Kazhipattur, Tamil Nadu, Chennai - 603103, India</span>
+
+                                    <span class="text-size-14"><b>U.S. Office:</b> 1401, 21st ST STE 6310, Sacramento,
+                                        CA 95811, USA</span>
                                 </li>
                             </ul>
                         </div>
@@ -533,28 +544,28 @@
                             <h4>Services</h4>
                             <ul class="list-unstyled mb-0">
                                 <li>
-                                    <a href="index.html">VAPT</a>
+                                    <a href="./service.html">VAPT</a>
                                 </li>
                                 <li>
-                                    <a href="about.html">Managed Security</a>
+                                    <a href="./about.html">Managed Security</a>
                                 </li>
                                 <li>
-                                    <a href="service.html">Infrastructure Security</a>
+                                    <a href="./service-detail.html?id=0">Infrastructure Security</a>
                                 </li>
                                 <li>
-                                    <a href="project.html">Cloud Security</a>
+                                    <a href="./service-detail.html?id=2">Cloud Security</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Mobile Security Assessment</a>
+                                    <a href="./service-detail.html?id=1">Mobile Security</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Auditing</a>
+                                    <a href="./service-detail.html?id=4">Auditing</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Wireless Security</a>
+                                    <a href="./service-detail.html?id=5">Wireless Security</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">SIEM & Threat Intelligence</a>
+                                    <a href="./service-detail.html?id=7">SIEM</a>
                                 </li>
                             </ul>
                         </div>
@@ -564,16 +575,20 @@
                             <h4>Subscribe to Newsletter</h4>
                             <form action="javascript:;">
                                 <div class="form-row position-relative">
-                                    <input type="email" name="email" id="emailadd" class="form-control" placeholder="Enter Your Email Address">
+                                    <input type="email" name="email" id="emailadd" class="form-control"
+                                        placeholder="Enter Your Email Address">
                                     <div class="input-group-append form-button">
-                                        <button class="btn" name="btnsubmit" id="submitbtn" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                                        <button class="btn" name="btnsubmit" id="submitbtn" type="submit"><i
+                                                class="fa-solid fa-paper-plane"></i></button>
                                     </div>
                                 </div>
                             </form>
                             <h6>Follow on social media:</h6>
                             <ul class="list-unstyled mb-0">
-                                <li class="hover-effect"><a href="https://www.instagram.com/aicl.training/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                                <li class="hover-effect"><a href="https://www.linkedin.com/company/infoziant"><i class="fa-brands fa-linkedin-in mr-0" aria-hidden="true"></i></a></li>
+                                <li class="hover-effect"><a href="https://www.instagram.com/aicl.training/"><i
+                                            class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                                <li class="hover-effect"><a href="https://www.linkedin.com/company/infoziant"><i
+                                            class="fa-brands fa-linkedin-in mr-0" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -924,6 +939,7 @@
     <script src="assets/js/quantity.js"></script>
     <script src="assets/js/back-to-top-button.js"></script>
     <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/product-page.js"></script>
 </body>
 
 </html>
