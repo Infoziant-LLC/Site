@@ -145,12 +145,13 @@ a {
     padding: 20px 42px;
     display: inline-block;
     color: var(--e-global-color-white);
-    background-image: linear-gradient(90deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%);
+    background-color: #0093E9; /* New background color */
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); /* New gradient */
     transition: all 0.3s ease-in-out;
 }
 .default-btn:hover {
     color: var(--e-global-color-white);
-    background-image: linear-gradient(90deg, var(--e-global-color-accent) 0%, var(--e-global-color-secondary) 100%);
+    background-image: linear-gradient(160deg, #80D0C7 0%, #0093E9 100%); /* Adjusted hover gradient */
 }
 .hover-effect {
     transition: all 0.3s ease-in-out;
@@ -1359,11 +1360,13 @@ html{
 
 .banner-section-security {
     /* background-color: var(--e-global-color-dark-blue); */
-    background-color: #101424;
-    position: relative;
+    
 }
 .highlight{
-    background: linear-gradient(90deg, #15F5BA, #0066ff); /* Neon blue gradient */
+    background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #3c4cff 0%, #b199c5 50%, #0968ac 100%);
+
+/* Neon blue gradient */
   -webkit-background-clip: text;
   color: transparent;
 }

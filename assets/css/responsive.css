@@ -1707,7 +1707,7 @@ h6 {font-size: 14px; line-height: 22px;}
 .footer_section .bottom_portion .copyright {padding: 10px 0;}
 .footer_section .bottom_portion .copyright p {font-size: 10px; line-height: 20px;}
 /* Home2 */
-.banner-section-security .banner-section {padding: 35px 15px 40px;}
+.banner-section-security .banner-section {        padding: 130px 15px 110px;    }
 .banner-section-security .banner-section .banner-content{text-align: center;}
 .banner-section-security .banner-section .banner-content h6{margin-bottom: 6px; padding: 0;}
 .banner-section-security .banner-section .banner-content h6::before {display: none;}

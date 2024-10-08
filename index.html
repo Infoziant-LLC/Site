@@ -23,6 +23,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/js/bootstrap.min.js">
@@ -37,11 +38,28 @@
     <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-
+    <head>
+        <!-- ... existing code ... -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- ... existing code ... -->
+    </head>
     <style>
         
     </style>
     <style>
+        .banner-section {
+    position: relative;
+    z-index: 1;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.aboutus_section {
+    position: relative;
+    z-index: 0;
+    padding: 100px 0; /* Adjust padding as needed */
+    margin-top: 50px; /* Add margin to separate from the banner */
+}
+        
     .services_section .row {
         display: flex;
         flex-wrap: wrap;
@@ -63,145 +81,182 @@
 
     .services_box h4, .services_box p, .services_box a {
         margin-bottom: 10px;
+    }@media (max-width: 767px) {
+    .mobile-hide {
+        display: none;
     }
+}
+
+
+/* ---- reset ---- */
+
+body {
+            margin: 0;
+            font: normal 75% Arial, Helvetica, sans-serif;
+        }
+
+        canvas {
+            display: block;
+            vertical-align: bottom;
+        }
+
+        /* ---- particles.js container ---- */
+
+        #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(2,37,78,1) 0%, rgba(4,56,126,1) 19.7%, rgba(85,245,221,1) 100.2% );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+        /* ---- stats.js ---- */
+
+        .count-particles {
+            background: #000022;
+            position: absolute;
+            top: 48px;
+            left: 0;
+            width: 80px;
+            color: #ffffff;
+            font-size: .8em;
+            text-align: left;
+            text-indent: 4px;
+            line-height: 14px;
+            padding-bottom: 2px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .js-count-particles {
+            font-size: .1em;
+        }
+
+        #stats,
+        .count-particles {
+            -webkit-user-select: none;
+        }
+
+        #stats {
+            border-radius: 3px 3px 0 0;
+            overflow: hidden;
+        }
+
+        .count-particles {
+            border-radius: 0 0 3px 3px;
+        }
     </style>
+
+
+
 </head>
 
 <body>
 <!-- Back to top button -->
 <a id="button"></a>
-<div class="banner-section-security">
-    <div class="card-overlay position-relative">
-        <header>
-            <div class="main_header">
+
+    <!-- Add the particles-js container -->
+    <div id="particles-js"></div>
+
+    <div class="banner-section-security">
+        <div class="card-overlay position-relative">
+            <header>
+                <div class="main_header">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light p-0">
+                            <a class="navbar-brand" href="index.html">
+                                <figure class="logo mb-0"><img class="infz-logo" src="assets/images/infoziant-logo.png" alt="" class="img-fluid"></figure>
+                            </a>
+                            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item dropdown active">
+                                        <a href="./index.html" class="nav-link navbar-text-color nav-item active" href="#" id="navbarDropdownone1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Home </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="service.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="product.html">Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="awards.html">Awards</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div id="search" class="">
+                <span class="close">X</span>
+                <form role="search" id="searchform" method="get">
+                    <input value="" name="q" type="search" placeholder="Type to Search">
+                </form>
+            </div>
+            <!-- BANNER SECTION -->
+            <section class="banner-section position-relative">
                 <div class="container-fluid">
-                    <nav class="navbar navbar-expand-lg navbar-light p-0">
-                        <a class="navbar-brand" href="index.html"><figure class="logo mb-0"><img class="infz-logo" src="assets/images/infoziant-logo.png" alt="" class="img-fluid"></figure></a>
-                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item dropdown active">
-                                    <a href="./index.html" class="nav-link navbar-text-color nav-item active" href="#" id="navbarDropdownone1" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false"> Home </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
-                                </li>                            
-                                <li class="nav-item">
-                                    <a class="nav-link" href="service.html">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="product.html">Product</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="awards.html">Awards</a>
-                                </li>
-                                
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="banner_content-section">
+                                <!-- SOCIAL ICONS -->
+                                <div class="left_icons float-left d-table" data-aos="fade-down">
+                                    <div class="icon_content d-table-cell align-middle">
+                                        <ul class="list-unstyled p-0 m-0">
+                                            <li><a href="https://www.linkedin.com/company/infoziant"><i class="fa-brands fa-linkedin-in mr-0" aria-hidden="true"></i></a></li>
+                                            <li class="p-0"><a href="https://www.instagram.com/aicl.training/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="banner-content">
+                                    <h6 class="text-white" data-aos="fade-up">Unlock Ultimate Cybersecurity with Infoziant</h6>
+                                    <h1 class="text-white">Empower Your Digital Security, <span class="highlight">Protect Your Future.</span></h1>
+                                    <p class="text-white" data-aos="fade-up">Our team of cybersecurity specialists leverages cutting-edge techniques to protect your digital assets from emerging threats. Explore our services, including VAPT and advanced security testing, designed to ensure your business stays secure.</p>
+                                    <div class="btn_wrapper" data-aos="fade-up">
+                                        <a class="text-decoration-none default-btn hover-effect" href="contact.html">Get Started</a>
+                                        <a class="text-decoration-none default-btn hover-effect" aty href="about.html">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </nav>
+
+                    </div>
                 </div>
-            </div>
-        </header>
-        <div id="search" class=""> 
-            <span class="close">X</span>
-            <form role="search" id="searchform" method="get">
-                <input value="" name="q" type="search" placeholder="Type to Search">
-            </form>
+            </section>
         </div>
-        <!-- BANNER SECTION -->
-        <section class="banner-section position-relative">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                        <div class="banner_content-section">
-                            <!-- SOCIAL ICONS -->
-                            <div class="left_icons float-left d-table" data-aos="fade-down">
-                                <div class="icon_content d-table-cell align-middle">
-                                    <ul class="list-unstyled p-0 m-0">
-                                        <li><a href="https://www.linkedin.com/company/infoziant"><i class="fa-brands fa-linkedin-in mr-0" aria-hidden="true"></i></a></li>
-                                        <li class="p-0"><a href="https://www.instagram.com/aicl.training/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="banner-content">
-                                <h6 class="text-white" data-aos="fade-up">Welcome To Infoziant</h6>
-                                <h1 class="text-white">Secure Your <span class="highlight">Cyber Space</span>, Secure Your <span class="highlight">Digital Life.</span></h1>
-                                <p class="text-white" data-aos="fade-up">Our team of cybersecurity experts utilizes advanced methodologies to assess
-                                    and protect your digital assets, ensuring top-tier security against potential threats. Explore our
-                                    range of services, including VAPT, security testing, and more.</p>
-                                <div class="btn_wrapper" data-aos="fade-up">
-                                    <a class="text-decoration-none default-btn hover-effect" href="contact.html">Get Started</a>
-                                    <a class="learn_more text-decoration-none default-btn hover-effect" href="about.html">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                        <div class="banner_wrapper">
-                            <figure class="banner-image mb-0">
-                                <img class="scanning-img" src="./assets/images/scanning-video.gif" alt="" class="img-fluid">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <section class="banner-section position-relative">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 col-md-8 col-sm-12 col-12">
-                        <div class="banner_content-section">
-                            
-                            <div class="left_icons float-left d-table" data-aos="fade-down">
-                                <div class="icon_content d-table-cell align-middle">
-                                    <ul class="list-unstyled p-0 m-0">
-                                        <li><a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://www.google.com/"><i class="fa-brands fa-google-plus-g" aria-hidden="true"></i></a></li>
-                                        <li class="p-0"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="banner-content">
-                                <h6 class="text-white" data-aos="fade-up">Best Cyber Security</h6>
-                                <h1 class="text-white">Fast & Effective Solutions with Fortified</h1>
-                                <p class="text-white" data-aos="fade-up">Eiusmod enim tempor incididunt aut labore et dolore magna aliua ruis nostrud exercitation ullamco laboris.</p>
-                                <div class="btn_wrapper" data-aos="fade-up">
-                                    <a class="text-decoration-none default-btn hover-effect" href="shop.html">Get Started</a>
-                                    <a class="play-icon mr-0 popup-vimeo" href="https://previews.customer.envatousercontent.com/h264-video-previews/2ac57905-3081-4e29-b265-929a140b7d47/31540821.mp4">
-                                        <figure class="thumb mb-0"><img src="./assets/images/banner_video_icon.png" style="cursor: pointer" alt="" class="img-fluid"></figure>
-                                        Watch Video
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-4 col-sm-12 col-12 d-sm-block d-none"></div>
-                </div>
-            </div>
-        </section> -->
     </div>
-</div>
-<!-- ABOUT US SECTION -->
-<section class="aboutus_section position-relative">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-12 text-md-left text-center">
-                <div class="aboutus_images_wrapper">
-                    <figure class="aboutus_image_one mb-0">
-                        <img src="./assets/images/aboutus_image1.jpg" alt="" class="img-fluid">
-                    </figure>
-                    <figure class="aboutus_image_two mb-0">
-                        <img src="./assets/images/aboutus_image2.jpg" alt="" class="img-fluid">
-                    </figure>
+    
+    <!-- ABOUT US SECTION -->
+    <section class="aboutus_section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 text-md-left text-center">
+                    <div class="aboutus_images_wrapper">
+                        <figure class="aboutus_image_one mb-0">
+                            <img src="./assets/images/aboutus_image1.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <figure class="aboutus_image_two mb-0">
+                            <img src="./assets/images/aboutus_image2.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <figure class="aboutus_image_three mb-0">
+                            <img src="./assets/images/aboutus_image3.jpg" alt="" class="img-fluid">
+                        </figure>
+
                     <figure class="aboutus_image_three mb-0">
                         <img src="./assets/images/aboutus_image3.jpg" alt="" class="img-fluid">
                     </figure>
@@ -294,7 +349,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3 mobile-hide">
                 <div class="services_box service_last_box">
                     <figure class="icon">
                         <img class="img-fluid hover-effect" src="assets/images/services_image3.png" alt="">
@@ -308,7 +363,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3 mobile-hide">
                 <div class="services_box service_lower_box">
                     <figure class="icon">
                         <img class="img-fluid hover-effect" src="assets/images/services_image4.png" alt="">
@@ -322,7 +377,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3 mobile-hide">
                 <div class="services_box service_lower_box">
                     <figure class="icon">
                         <img class="img-fluid hover-effect" src="assets/images/services_image5.png" alt="">
@@ -336,7 +391,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3 mobile-hide">
                 <div class="services_box service_lower_box service_last_box">
                     <figure class="icon">
                         <img class="img-fluid hover-effect" src="assets/images/services_image6.png" alt="">
@@ -350,7 +405,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3 mobile-hide">
                 <div class="services_box service_lower_box service_last_box">
                     <figure class="icon">
                         <img class="img-fluid hover-effect" src="assets/images/services_image1.png" alt="">
@@ -378,7 +433,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+            <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3 mobile-hide">
                 <div class="services_box service_lower_box service_last_box">
                     <figure class="icon">
                         <img class="img-fluid hover-effect" src="assets/images/services_image3.png" alt="">
@@ -1193,5 +1248,251 @@
 <script src="assets/js/quantity.js"></script>
 <script src="assets/js/back-to-top-button.js"></script>
 <script src="assets/js/preloader.js"></script>
+<script>/* ---- particles.js config ---- */
+
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 380,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+    
+    
+    /* ---- stats.js config ---- */
+    
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);</script>
+    <script>
+        /* ---- particles.js config ---- */
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 200, // Reduced from 380
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 2, // Reduced from 3
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3, // Reduced from 6
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
 </body>
 </html>
