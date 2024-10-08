@@ -429,9 +429,7 @@ html{
 
 /* Cyber Agency Home Page Banner Section Style */
 
-.banner-section-outer .banner-section{
-    padding: 172px 280px 265px;
-}
+
 .banner-section-outer .banner-section .banner-content h6 {
     letter-spacing: 1.6px;
     margin-bottom: 12px;
@@ -496,7 +494,7 @@ html{
 /* Cyber Agency Home Page About Us Section Style */
 
 .aboutus_section {
-    padding: 136px 0 180px;
+    padding: 100px 0 180px;
 }
 .aboutus_section .aboutus_images_wrapper{
     position: relative;
@@ -5168,7 +5166,7 @@ to {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 logos per row */
     gap: 20px; /* Adjusted gap for even spacing */
-    background-color: #18347c;
+    background-color: #0E1625;
     /* background-image: linear-gradient(32deg, var(--e-global-color-secondary) 0%, var(--e-global-color-accent) 100%); */
     /* box-shadow: 0 0 6px rgba(21, 245, 186, 0.8), 0 0 6px rgba(0, 102, 255, 0.8); */
     width: 85%; /* Adjusted width for better alignment */

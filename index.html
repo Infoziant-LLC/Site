@@ -57,7 +57,7 @@
     position: relative;
     z-index: 0;
     padding: 100px 0; /* Adjust padding as needed */
-    margin-top: 50px; /* Add margin to separate from the banner */
+    margin-top: 0px; /* Add margin to separate from the banner */
 }
         
     .services_section .row {
@@ -226,7 +226,7 @@ body {
                                 <div class="banner-content">
                                     <h6 class="text-white" data-aos="fade-up">Unlock Ultimate Cybersecurity with Infoziant</h6>
                                     <h1 class="text-white">Empower Your Digital Security,<br> <span class="highlight">Protect Your Future.</span></h1>
-                                    <p class="text-white" data-aos="fade-up">Our team of cybersecurity specialists leverages cutting-edge techniques to protect your digital assets from emerging threats. Explore our services, including VAPT and advanced security testing, designed to ensure your business stays secure.</p>
+                                    <p class="text-white" data-aos="fade-up">Fortifying your digital landscape with innovative cyber solutions. Protecting your business, empowering your growth</p>
                                     <div class="btn_wrapper" data-aos="fade-up">
                                         <a class="text-decoration-none default-btn hover-effect" href="contact.html">Get Started</a>
                                         <a class="text-decoration-none default-btn hover-effect" aty href="about.html">Learn More</a>
@@ -298,9 +298,9 @@ body {
                             <p class="text-size-14 m-0">Security Researchers</p>
                         </li>
                     </ul>
-                    <div class="btn_wrapper">
+                    <!-- <div class="btn_wrapper">
                         <a class="text-decoration-none default-btn hover-effect" href="./about.html">Learn More</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -1493,6 +1493,126 @@ body {
             },
             "retina_detect": true
         });
+    </script>
+    <script>
+        // Function to initialize particles.js with different settings based on screen size
+        function initParticles() {
+            const isMobile = window.innerWidth <= 767; // Define mobile screen width
+    
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": isMobile ? 100 : 200, // Fewer particles on mobile
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": isMobile ? 1 : 2, // Smaller size on mobile
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": isMobile ? 2 : 3, // Slower speed on mobile
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "window",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        }
+    
+        // Initialize particles.js on page load
+        window.addEventListener('load', initParticles);
     </script>
 </body>
 </html>
