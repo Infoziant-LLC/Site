@@ -537,6 +537,7 @@ p {font-size: 16px; line-height: 28px;}
 .about_sub_banner::after {border-bottom: solid 28px rgb(255,255,255); border-right: solid 950px rgb(255,255,255); border-left: solid 750px transparent; border-top: solid 22px transparent;}
 .about_banner-section {padding: 60px 0 140px;}
 .about_banner-section .about_banner_content h1 {margin-bottom: 15px;}
+.managed-security-title h1{text-align: center;}
 .about_banner-section .about_banner_content p {margin-bottom: 20px; padding: 0 195px;}
 .about_banner-section .about_banner_content .box {padding: 12px 25px;}
 .aboutpage_about-section {padding: 90px 0 125px;}
