@@ -167,6 +167,241 @@ html{
 
 /* Cyber Agency Home Page Header Section Style */
 
+
+/* -----------------------------------SCANNING start------------------------------------------------------ */
+
+.banner-main{
+    display: flex;
+    gap: 10%;
+}
+
+.scanning-animation{
+    margin-top: 5%;
+}
+
+/* Outer container for the corner borders and the video container */
+.border-container {
+    position: relative;
+    width: 325px; /* Larger than the video container */
+    height: 305px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  /* Corner Borders */
+  .corner {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #39FF14;
+    z-index: 1;
+  }
+  
+  /* Top Left Corner */
+  .top-left {
+    top: -65px;
+    left: -10px;
+    border-top-left-radius: 10px;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: -10px -10px 15px #39FF14; /* Glow only for the left and top */
+  }
+  
+  /* Top Right Corner */
+  .top-right {
+    top: -65px;
+    right: -10px;
+    border-top-right-radius: 10px;
+    border-left: none;
+    border-bottom: none;
+    box-shadow: 10px -10px 15px #39FF14; /* Glow only for the right and top */
+  }
+  
+  /* Bottom Left Corner */
+  .bottom-left {
+    bottom: -65px;
+    left: -10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+    border-top: none;
+    box-shadow: -10px 10px 15px #39FF14; /* Glow only for the left and bottom */
+  }
+  
+  /* Bottom Right Corner */
+  .bottom-right {
+    bottom: -65px;
+    right: -10px;
+    border-bottom-right-radius: 10px;
+    border-left: none;
+    border-top: none;
+    box-shadow: 10px 10px 15px #39FF14; /* Glow only for the right and bottom */
+  }
+  
+  /* Inner video container with gap from the neon borders */
+  .video-container {
+    width: 295px;
+    height: 375px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgb(146, 146, 146);
+    /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-player {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Scanning Line */
+  .scanning-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #39FF14;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0 0 10px 3px rgba(57, 255, 20, 0.7); /* Neon green shadow */
+    animation: scan 3s linear infinite;
+  }
+
+  .video-info {
+    display: flex;
+    align-items: center; /* Aligns the loader and title vertically */
+    justify-content: center; /* Centers the items */
+    margin-top: 50px; /* Space between video and title */
+  }
+
+  .video-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #39FF14;
+  }
+  
+  .pulse-loaders {
+    display: flex; /* Arrange the loader dots in a row */
+    margin-left: 8px; /* Space between title and loader */
+  }
+  
+  .pulse-loader {
+    width: 10px; /* Width of the loader */
+    height: 10px; /* Height of the loader */
+    border-radius: 50%; /* Make it circular */
+    background-color: #39FF14; /* Neon green color */
+    margin: 0 2px; /* Space between each pulse loader */
+    animation: pulse 1s infinite; /* Pulsating effect */
+  }
+  
+  /* Different animation delays for each loader */
+  .pulse-loader:nth-child(1) {
+    animation-delay: 0s; /* First loader starts immediately */
+  }
+  
+  .pulse-loader:nth-child(2) {
+    animation-delay: 0.2s; /* Second loader starts after 0.2 seconds */
+  }
+  
+  .pulse-loader:nth-child(3) {
+    animation-delay: 0.4s; /* Third loader starts after 0.4 seconds */
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1); /* Original size */
+      opacity: 1; /* Fully visible */
+    }
+    50% {
+      transform: scale(1.5); /* Scale up */
+      opacity: 0.5; /* Semi-transparent */
+    }
+  }
+  
+  
+  
+  @keyframes scan {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: calc(100% - 2px);
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+  }
+}
+
+.banner-product{
+    display: flex;
+}
+  
+  /* Responsive Styling */
+  @media (max-width: 350px) {
+    .border-container {
+      width: 100%;
+      height: auto;
+    }
+  
+    .video-container {
+      width: 75vw;
+      height: 45vh;
+    }
+    .video-info{
+        margin-top: 5px;
+    }
+   .top-left{
+    top: -25px;
+    left: 1px;
+   }
+   .top-right{
+    top: -25px;
+    right: 1px;
+   }
+   .bottom-left{
+    bottom: -25px;
+    left: 1px;
+   }
+   .bottom-right{
+    bottom: -25px;
+    right: 1px;
+   }
+   .video-title{
+    font-size: 14px;
+    font-weight: 600;
+   }
+   .pulse-loader{
+    width: 5px;
+    height: 5px;
+   }
+  }
+
+
+/* -----------------------------------SCANNING ends------------------------------------------------------ */
+
 .banner-section-outer {
    
    position: relative;
@@ -1362,14 +1597,12 @@ html{
     
 }
 .highlight{
-    background-color: #0093E9;
-    background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
-    
-
-/* Neon blue gradient */
-  -webkit-background-clip: text;
-  color: transparent;
+    background-image: linear-gradient(90deg, #15F5BA, #0066ff);
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent; /* Makes the text color transparent to show the gradient */
+    display: inline-block;
 }
+
 .banner-section-security::before {
     /* background: url(../images/statistics_background_layer.png); */
     content: "";

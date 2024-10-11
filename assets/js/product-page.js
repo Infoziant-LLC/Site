@@ -70,7 +70,43 @@ const observer = new IntersectionObserver((entries) => {
             window.removeEventListener('wheel', handleScroll);
         }
     });
-}, { threshold: 0.5 }); // Set threshold to determine when to trigger
+}, { threshold: 0.2 }); // Set threshold to determine when to trigger
+
+// Get the button elements
+const nextBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById('prev-btn');
+
+// Function to update the buttons' disabled state
+function updateButtons() {
+    nextBtn.disabled = currentIndex >= serviceItems.length - 1;
+    prevBtn.disabled = currentIndex <= 0;
+}
+
+// Function to go to the next service item
+function goToNext() {
+    if (currentIndex < serviceItems.length - 1) {
+        currentIndex++;
+        updateService();
+        updateButtons();
+    }
+}
+
+// Function to go to the previous service item
+function goToPrev() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateService();
+        updateButtons();
+    }
+}
+
+// Event listeners for next and previous buttons
+nextBtn.addEventListener('click', goToNext);
+prevBtn.addEventListener('click', goToPrev);
+
+// Initial setup for buttons
+updateButtons();
+
 
 
 observer.observe(servicesSection);
