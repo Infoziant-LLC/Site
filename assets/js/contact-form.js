@@ -2,54 +2,62 @@ jQuery(document).ready(function () {
     jQuery('#submit').on('click', function (event) {
         event.preventDefault(); // Prevent default form submission
 
-        if (jQuery('#captcha_val').val() != jQuery('#captcha_text').val()) {
-            $('#captcha_text').parent('div').append('<span class="error">Captcha does not match</span>');
-        } else {
-            jQuery("#contactpage").validate({
-                submitHandler: function (form) {
-                    submitSignupFormNow(form);
-                },
-                rules: {
-                    fname: {
-                        required: true
-                    },
-                    phone: {
-                        required: true,
-                        number: true
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    }
-                },
-                errorElement: "span",
-                errorPlacement: function (error, element) {
-                    error.appendTo(element.parent());
-                }
-            });
+        // Reset previous errors
+        $('#nameError').text('');
+        $('#emailError').text('');
+        $('#messageError').text('');
+
+        let isValid = true;
+
+        // Get form values
+        const name = $('#fname').val();
+        const email = $('#email').val();
+        const phone = $('#phone').val();
+        const message = $('#comment').val();
+
+        // Validate required fields
+        if (name === '') {
+            $('#nameError').text('Name is required');
+            isValid = false;
         }
-    });
 
-    function submitSignupFormNow(form) {
-        var formData = jQuery(form).serialize();
+        if (email === '') {
+            $('#emailError').text('Email is required');
+            isValid = false;
+        }
 
-        jQuery.ajax({
-            url: 'contact-form.php', // Ensure this is the correct URL
-            type: 'POST',
-            data: formData,
-            success: function (response) {
-                var result = jQuery.parseJSON(response);
-                if (result.status === "Success") {
+        if (message === '') {
+            $('#messageError').text('Message is required');
+            isValid = false;
+        }
+
+        // Send form data to Web3Forms if valid
+        if (isValid) {
+            const formData = new FormData();
+            formData.append('access_key', '8a00277a-d5f2-4f73-b618-e385955af564'); // Replace with your actual access key
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('phone', phone);
+            formData.append('message', message);
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
                     showSuccessMessage();
                 } else {
                     showErrorMessage();
                 }
-            },
-            error: function () {
+            })
+            .catch(error => {
+                console.error('Error:', error);
                 showErrorMessage();
-            }
-        });
-    }
+            });
+        }
+    });
 
     function showSuccessMessage() {
         // Hide the form

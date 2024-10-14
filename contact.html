@@ -228,28 +228,29 @@
                 </div>
             </div>
             <div class="get_in_touch_form_content" data-aos="fade-up">
-                <form id="contactpage" method="POST" action="https://api.web3forms.com/submit">
-                    <input type="hidden" name="access_key" value="8a00277a-d5f2-4f73-b618-e385955af564">
+                <form id="contactForm" method="POST">
+                    <input type="hidden" name="access_key" value="8a00277a-d5f2-4f73-b618-e385955af564"> <!-- Replace with your actual access key -->
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <input type="text" class="form-control" placeholder="Name" name="fname" id="fname" required>
+                            <input type="text" class="form-control" placeholder="Name" name="name" id="name" required>
+                            <span id="nameError" class="error"></span>
                         </div>
                         <div class="col-md-4 mb-3">
                             <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
+                            <span id="emailError" class="error"></span>
                         </div>
-                    
-                    
                         <div class="col-md-4 mb-3">
                             <input type="tel" class="form-control" placeholder="Phone" name="phone" id="phone">
                         </div>
-                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-12 mb-3">
-                            <textarea rows="5" name="msg" id="comment" class="form-control" placeholder="Message" required></textarea>
+                            <textarea rows="5" name="message" id="message" class="form-control" placeholder="Message" required></textarea>
+                            <span id="messageError" class="error"></span>
                         </div>
                     </div>
                     <div class="form_button_wrapper text-center">
-                        <button id="submit" type="submit" name="btnsubmit" class="default-btn">Submit Now</button>
+                        <button id="submit" type="submit" class="default-btn">Submit Now</button>
                     </div>
                 </form>
                 <div id="form-message" class="text-center" style="display: none; margin-top: 20px;"></div>

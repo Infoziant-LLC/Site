@@ -86,219 +86,219 @@
 
 <body>
     <!-- Back to top button -->
-    <a id="button"></a>
-    <div class="contact-banner-section-outer">
-        <div class="card-overlay position-relative">
-            <header>
-                <div class="main_header">
-                    <div class="container-fluid">
-                        <nav class="navbar navbar-expand-lg navbar-light p-0">
-                            <a class="navbar-brand" href="index.html">
-                                <figure class="logo mb-0"><img class="infz-logo" src="assets/images/infoziant-logo.png" alt="" class="img-fluid"></figure>
-                            </a>
-                            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                                <span class="navbar-toggler-icon"></span>
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="about.html">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="service.html">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="product.html">Product</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="awards.html">Awards</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="blog.html">Blog</a>
-                                    </li>
-                                    <li class="nav-item dropdown active">
-                                        <a class="nav-link navbar-text-color" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contact </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-            <div id="search" class="">
-                <span class="close">X</span>
-                <form role="search" id="searchform" method="get">
-                    <input value="" name="q" type="search" placeholder="Type to Search">
-                </form>
-            </div>
-            <!-- BANNER SECTION -->
-            <section class="about_banner-section position-relative">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="about_banner_content">
-                                <h1 class="text-white">Get Started</h1>
-                                <p class="text-white">Connect with us to explore innovative solutions tailored to your business needs – we're here to help you succeed. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-angle-up"></i></a>
+    <!-- PRE LOADER -->
+    <div class="js">
+        <div class="preloader-jackhammer">
+            <ul class="cssload-flex-container">
+                <li>
+                    <span class="cssload-loading"></span>
+                </li>
+            </ul>
         </div>
     </div>
-    <!--CONSULTATION FORM STARTS -->
-    <div class="consultation-container">
-        <h1 class="form-title">Get A Quick Consultation</h1>
-        <p class="form-desc">
-            Are you looking for a solution to a confusing security issue? Ask our customer service team for assistance right away.
-        </p>
-        <form id="consultationForm" class="consultation-form">
-            <div class="form-row">
-                <div class="form-left">
-                    <div class="input-group">
-                        <input class="cf-inp" type="text" id="name" name="name" placeholder="Name*" required />
-                        <input class="cf-inp" type="tel" id="phone" name="phone" placeholder="Phone Number" />
+    <!-- Header Section -->
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Infoziant"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="custom_menu-btn">
+                        <a href="#">
+                            <img src="assets/images/menu-btn.png" alt="menu-btn"></a>
                     </div>
                 </div>
-                <div class="form-right">
-                    <div class="input-group">
-                        <input class="cf-inp" type="email" id="email" name="email" placeholder="Email*" required />
-                        <select class="cf-inp" id="services" name="services" required>
-                            <option value="" disabled selected>Select Services</option>
-                            <option value="Service1">Managed Security Services</option>
-                            <option value="service2">Vulnerability Assessment / Penetration testing</option>
-                            <option value="service3">Cloud Security</option>
-                            <option value="service4">Infrastructure Security Assessment</option>
-                            <option value="service5">Mobile Security Assessment</option>
-                            <option value="service6">Auditing</option>
-                            <option value="service7">Security Incident, Event Management and Threat Intelligence</option>
-                            <option value="service8">Email Protection System</option>
-                            <option value="service9">Application Security</option>
-                        </select>
+            </nav>
+        </div>
+    </header>
+    <!-- end header section -->
+    <!-- banner section -->
+    <section class="banner_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="banner_heading">
+                        <h1>Get Started with Infoziant</h1>
+                        <p>We are a team of experienced cybersecurity professionals who are passionate about helping businesses protect their data and systems.</p>
+                        <a href="services.html" class="call_to_action_btn">Explore Our Services</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner_img-box">
+                        <img src="assets/images/banner-img.png" alt="banner-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end banner section -->
+    <!-- contact section -->
+    <section class="contact_form-section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact_form-heading">
+                        <h2>Get in Touch</h2>
+                        <p>We'd love to hear from you. Please fill out the form below and we'll get back to you as soon as possible.</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="get_in_touch_form_content" data-aos="fade-up">
+                        <div id="popupBox" style="display: none;">
+                            <form id="popupForm" method="POST">
+                                <input type="hidden" name="access_key" value="8a00277a-d5f2-4f73-b618-e385955af564"> <!-- Replace with your actual access key -->
+                                <div>
+                                    <input type="text" id="name" name="name" placeholder="Name*" required>
+                                    <span id="nameError" class="error"></span>
+                                </div>
+                                <div>
+                                    <input type="email" id="email" name="email" placeholder="Email*" required>
+                                    <span id="emailError" class="error"></span>
+                                </div>
+                                <div>
+                                    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                                </div>
+                                <div>
+                                    <select id="services" name="services">
+                                        <option value="" disabled selected>Select Services</option>
+                                        <option value="service3">Cloud Security</option>
+                                        <option value="service4">Infrastructure Security Assessment</option>
+                                        <option value="service5">Mobile Security Assessment</option>
+                                        <option value="service6">Auditing</option>
+                                        <option value="service7">Security Incident, Event Management and Threat Intelligence</option>
+                                        <option value="service8">Email Protection System</option>
+                                        <option value="service9">Application Security</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <input type="text" id="address" name="address" placeholder="Address">
+                                </div>
+                                <div>
+                                    <textarea id="message" name="message" placeholder="Enter message*" required></textarea>
+                                    <span id="messageError" class="error"></span>
+                                </div>
+                                <button type="submit">Submit the Request</button>
+                                <button type="button" id="closePopupBtn">Close</button>
+                            </form>
+                        </div>
+                        <button id="openPopupBtn">Open Form</button>
                     </div>
                 </div>
             </div>
-            <input class="cf-inp cf-address" type="text" id="address" name="address" placeholder="address" />
-            <textarea class="cf-inp cf-area" id="message" name="message" placeholder="Enter message*" required></textarea>
-            <button type="submit" class="submit-button">Submit the Request</button>
-        </form>
-    </div>
-    <!-- CONSULTATION FORM ENDS -->
-    
-    <!-- FOOTER SECTION -->
-    <section class="footer_section">
+        </div>
+    </section>
+    <!-- end contact section -->
+    <!-- info section -->
+    <section class="info_section layout_padding">
         <div class="container">
-            <div class="middle_portion">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 order-lg-1 order-sm-1 order-1">
-                        <div class="about_contact_wrapper">
-                            <a href="index.html">
-                                <figure>
-                                    <img class="infz-logo" src="assets/images/infoziant-logo.png" alt="" class="img-fluid">
-                                </figure>
-                            </a>
-                           
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <i class="fa-solid fa-phone"></i>
-                                    <a href="tel:+13147320300" class="text-decoration-none">+1 (314) 732 0300, </a><br> <!-- US Contact -->
-                                    <a href="tel:+919600085988" class="text-decoration-none">+91 96000 85988</a> <!-- India Contact -->
-                                </li>
-                                <li class="contact_mail">
-                                    <i class="fa-sharp fa-solid fa-envelope"></i>
-                                    <a href="support@infoziant.com" class="text-decoration-none">support@infoziant.com</a>
-                                </li>
-                                <li class="mb-0 location">
-                                    <i class="fa-solid fa-location-dot location"></i>
-                                    <span class="text-size-14"><b>India Office:</b> Akshaya HQ, Rajiv Gandhi Salai, Kazhipattur, Tamil Nadu, Chennai - 603103, India</span>
-                                   
-                                    <span class="text-size-14"><b>U.S. Office:</b> 1401, 21st ST STE 6310, Sacramento, CA 95811, USA</span>
-                                </li>
-                            </ul>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info_contact">
+                        <h4>Address</h4>
+                        <p>123 Main Street, Anytown, USA</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info_contact">
+                        <h4>Phone</h4>
+                        <p>+1 (555) 555-5555</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info_contact">
+                        <h4>Email</h4>
+                        <p>info@infoziant.com</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info_social">
+                        <h4>Follow Us</h4>
+                        <div class="social_box">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 order-lg-2 order-sm-2 order-2">
-                        <div class="navigation_col links">
-                            <h4>Navigation</h4>
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a href="about.html">About</a>
-                                </li>
-                                <li>
-                                    <a href="service.html">Services</a>
-                                </li>
-                                <li>
-                                    <a href="product.html">Product</a>
-                                </li>
-                                <li>
-                                    <a href="awards.html">Awards</a>
-                                </li>
-                                <li>
-                                    <a href="blog.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 order-lg-3 order-sm-4 order-3">
-                        <div class="services_col links">
-                            <h4>Services</h4>
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="./service.html">VAPT</a>
-                                </li>
-                                <li>
-
-                                    <a href="Managed-Security.html">Managed Security</a>
-
-                                </li>
-                                <li>
-                                    <a href="./service-detail.html?id=0">Infrastructure Security</a>
-                                </li>
-                                <li>
-                                    <a href="./service-detail.html?id=2">Cloud Security</a>
-                                </li>
-                                <li>
-                                    <a href="./service-detail.html?id=1">Mobile Security</a>
-                                </li>
-                                <li>
-                                    <a href="./service-detail.html?id=4">Auditing</a>
-                                </li>
-                                <li>
-                                    <a href="./service-detail.html?id=5">Wireless Security</a>
-                                </li>
-                                <li>
-                                    <a href="./service-detail.html?id=7">SIEM</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 order-lg-4 order-sm-3 order-4">
-                        <div class="newsletter_content">
-                            <h4>Subscribe to Newsletter</h4>
-                            <form action="javascript:;">
-                                <div class="form-row position-relative">
-                                    <input type="email" name="email" id="emailadd" class="form-control" placeholder="Enter Your Email Address">
-                                    <div class="input-group-append form-button">
-                                        <button class="btn" name="btnsubmit" id="submitbtn" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
-                                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end info section -->
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer_section-container">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="footer_logo">
+                                    <a href="index.html"><img src="assets/images/logo.png" alt="Infoziant"></a>
+                                    <p>We are a team of experienced cybersecurity professionals who are passionate about helping businesses protect their data and systems.</p>
                                 </div>
-                            </form>
-                            <h6>Follow on social media:</h6>
-                            <ul class="list-unstyled mb-0">
-                                <li class="hover-effect"><a href="https://www.instagram.com/aicl.training/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                                <li class="hover-effect"><a href="https://www.linkedin.com/company/infoziant"><i class="fa-brands fa-linkedin-in mr-0" aria-hidden="true"></i></a></li>
-                            </ul>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="footer_menu">
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li>
+
+                                            <a href="index.html">Home</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="about.html">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 order-lg-4 order-sm-3 order-4">
+                                <div class="newsletter_content">
+                                    <h4>Subscribe to Newsletter</h4>
+                                    <form action="javascript:;">
+                                        <div class="form-row position-relative">
+                                            <input type="email" name="email" id="emailadd" class="form-control" placeholder="Enter Your Email Address">
+                                            <div class="input-group-append form-button">
+                                                <button class="btn" name="btnsubmit" id="submitbtn" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <h6>Follow on social media:</h6>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="hover-effect"><a href="https://www.instagram.com/aicl.training/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li class="hover-effect"><a href="https://www.linkedin.com/company/infoziant"><i class="fa-brands fa-linkedin-in mr-0" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -312,16 +312,7 @@
             </div>
         </div>
     </section>
-    <!-- PRE LOADER -->
-    <div class="js">
-        <div class="preloader-jackhammer">
-            <ul class="cssload-flex-container">
-                <li>
-                    <span class="cssload-loading"></span>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <!-- end footer section -->
     <!-- Latest compiled JavaScript -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -340,7 +331,6 @@
     <script src="assets/js/contact-validate.js"></script>
     <script src="assets/js/back-to-top-button.js"></script>
     <script src="assets/js/preloader.js"></script>
-    <script src="assets/js/consultationForm.js"></script>
 </body>
 
 </html>
