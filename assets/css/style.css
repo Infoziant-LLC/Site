@@ -360,7 +360,7 @@ html{
 }
   
   /* Responsive Styling */
-  @media (max-width: 350px) {
+  @media (max-width: 776px) {
     .border-container {
       width: 100%;
       height: auto;
