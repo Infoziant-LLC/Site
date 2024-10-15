@@ -48,6 +48,8 @@
             border-radius: 5px; /* Optional: rounded corners */
         }
     }
+    
+
     </style>
 </head>
 
@@ -299,6 +301,14 @@
                         </ul>
                     </div>
                 </div>
+                  <!-- {
+    id: 4,
+    title: "Auditing",
+    description: "We assess your security practices for compliance and risk management, providing insights to enhance your security posture.",
+    image: "./assets/images/services-Images/servicepage-image5.png",
+    icon: "./assets/images/servicepage-icon5.png",
+    link: "./service-detail.html?id=4"
+  }, -->
                 <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 order-lg-3 order-sm-4 order-3">
                     <div class="services_col links">
                         <h4>Services</h4>
@@ -310,9 +320,7 @@
                               <a href="./service-detail.html?id=3">API VAPT</a>
                             </li>
                             <li>
-                              <a href="./service-detail.html?id=0"
-                                >Infrastructure Security</a
-                              >
+                              <a href="./service-detail.html?id=0">Infrastructure Security</a>
                             </li>
                             <li>
                               <a href="./service-detail.html?id=2">Cloud Security</a>
@@ -418,19 +426,12 @@
     icon: "./assets/images/servicepage-icon4.png",
     link: "./service-detail.html?id=3"
   },
-  {
-    id: 4,
-    title: "Auditing",
-    description: "We assess your security practices for compliance and risk management, providing insights to enhance your security posture.",
-    image: "./assets/images/services-Images/servicepage-image5.png",
-    icon: "./assets/images/servicepage-icon5.png",
-    link: "./service-detail.html?id=4"
-  },
+
   {
     id: 5,
     title: "SIEM & Threat Intelligence",
     description: "We deliver proactive cybersecurity with SIEM and threat intelligence services, using cutting-edge technologies to prevent threats.",
-    image: "./assets/images/services-Images/servicepage-image6.png",
+    image: "./assets/images/services-Images/servicepage-image6.webp",
     icon: "./assets/images/servicepage-icon6.png",
     link: "./service-detail.html?id=7"
   }
@@ -438,35 +439,38 @@
 
 
   
-    const serviceContainer = document.getElementById('service-container');
+const serviceContainer = document.getElementById('service-container');
 
+services.forEach((service, index) => {
+    // Check if the service ID is 3 or 5
+    const columnClass = (service.id === 3 || service.id === 5) ? 'col-lg-4 center-align' : 'col-lg-4 col-md-6 col-sm-6 col-12';
+    const marginStyle = (service.id === 3 || service.id === 5) ? 'style="margin: 89px;"' : '';
 
-services.forEach(service => {
-  const serviceBox = `
-    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-      <div class="service_boxcontent">
-        <div class="upper_portion">
-          <figure class="mb-0 service-image">
-            <img src="${service.image}" class="article_img" alt="">
-          </figure>
-          <div class="image_content">
-            <figure class="service-icon mb-0">
-              <img src="${service.icon}" alt="" class="img-fluid">
-            </figure>
-          </div>
+    const serviceBox = `
+        <div class="${columnClass}" ${marginStyle}>
+            <div class="service_boxcontent">
+                <div class="upper_portion">
+                    <figure class="mb-0 service-image">
+                        <img src="${service.image}" class="article_img" alt="">
+                    </figure>
+                    <div class="image_content">
+                        <figure class="service-icon mb-0">
+                            <img src="${service.icon}" alt="" class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <div class="lower_portion_wrapper">
+                    <div class="lower_portion">
+                        <h4>${service.title}</h4>
+                        <p class="text-size-16">${service.description}</p>
+                        <a class="read_more text-decoration-none" href="${service.link}">Read More<i class="arrow fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="lower_portion_wrapper">
-          <div class="lower_portion">
-            <h4>${service.title}</h4>
-            <p class="text-size-16">${service.description}</p>
-            <a class="read_more text-decoration-none" href="${service.link}">Read More<i class="arrow fa-solid fa-angle-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
+    `;
 
-  serviceContainer.innerHTML += serviceBox;
+    serviceContainer.innerHTML += serviceBox;
 });
   </script>
   
