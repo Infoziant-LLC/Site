@@ -212,7 +212,16 @@
         box-sizing: border-box;
         /* Ensure padding and border are included in the element's total width and height */
       }
+      .location ul {
+  padding-left: 20px; /* Indent the list */
+}
 
+.location li {
+  margin-bottom: 10px; /* Add space between addresses */
+}
+.footer_section {
+      color: white;
+  }
       /* fiza changes 11/10
 .aboutus_section {
     position: relative;
@@ -1635,12 +1644,12 @@
 </section> -->
 
     <!-- FOOTER SECTION -->
-    <section class="footer_section">
+    <section class="footer_section" style="color: white;">
       <div class="container">
         <div class="middle_portion">
           <div class="row">
             <div
-              class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 order-lg-1 order-sm-1 order-1"
+              class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 order-lg-1 order-sm-1 order-1"
             >
               <div class="about_contact_wrapper">
                 <a href="index.html">
@@ -1666,6 +1675,7 @@
                     >
                     <!-- India Contact -->
                   </li>
+                  <br>
                   <li class="contact_mail">
                     <i class="fa-sharp fa-solid fa-envelope"></i>
                     <a href="support@infoziant.com" class="text-decoration-none"
@@ -1674,23 +1684,32 @@
                   </li>
                   <li class="mb-0 location">
                     <i class="fa-solid fa-location-dot location"></i>
-                    <span class="text-size-14"
-                      ><b>India Office:</b> Akshaya HQ, Rajiv Gandhi Salai,
-                      Kazhipattur, Tamil Nadu, Chennai - 603103, India</span
-                    >
-
-                    <span class="text-size-14"
-                      ><b>U.S. Office:</b> 1401, 21st ST STE 6310, Sacramento,
-                      CA 95811, USA</span
-                    >
+                    <ul class="list-unstyled">
+                      <li class="text-size-14">
+                        <b>Mumbai:</b> 101 - 102 1st Floor, Hindustan Kohinoor Complex, LBS Marg, Vikhroli(West), Mumbai - 400083
+                      </li>
+                      <li class="text-size-14">
+                        <b>Chennai:</b> NO 49 & 50L, 3rd Floor, Express Chambers (Express Avenue), Whites Road, Royapettah, Chennai - 600 014, India
+                      </li>
+                      <li class="text-size-14">
+                        <b>Singapore:</b> 60 Paya Lebar Road, #07-39, Paya Lebar Square, Singapore 409051
+                      </li>
+                      <li class="text-size-14">
+                        <b>Dubai:</b> Suite #724, Tamani Arts, Business Bay, Dubai, UAE
+                      </li>
+                      <li class="text-size-14">
+                        <b>United States:</b> 14512 Tracemor Dr #1, Chesterfield MO 63017 USA
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
             </div>
+            
             <div
-              class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 order-lg-2 order-sm-2 order-2"
+              class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 order-lg-2 order-sm-2 order-2 d-flex align-items-center justify-content-center"
             >
-              <div class="navigation_col links">
+              <div class="navigation_col links text-center">
                 <h4>Navigation</h4>
                 <ul class="list-unstyled mb-0">
                   <li>
@@ -1715,9 +1734,9 @@
               </div>
             </div>
             <div
-              class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 order-lg-3 order-sm-4 order-3"
+              class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 order-lg-3 order-sm-4 order-3 d-flex align-items-center justify-content-center"
             >
-              <div class="services_col links">
+              <div class="services_col links text-center">
                 <h4>Services</h4>
                 <ul class="list-unstyled mb-0">
                   <li>
@@ -1740,50 +1759,6 @@
                   
                   <li>
                     <a href="./service-detail.html?id=7">SIEM</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 order-lg-4 order-sm-3 order-4"
-            >
-              <div class="newsletter_content">
-                <h4>Subscribe to Newsletter</h4>
-                <form action="javascript:;">
-                  <div class="form-row position-relative">
-                    <input
-                      type="email"
-                      name="email"
-                      id="emailadd"
-                      class="form-control"
-                      placeholder="Enter Your Email Address"
-                    />
-                    <div class="input-group-append form-button">
-                      <button
-                        class="btn"
-                        name="btnsubmit"
-                        id="submitbtn"
-                        type="submit"
-                      >
-                        <i class="fa-solid fa-paper-plane"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-                <h6>Follow on social media:</h6>
-                <ul class="list-unstyled mb-0">
-                  <li class="hover-effect">
-                    <a href="https://www.instagram.com/aicl.training/"
-                      ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li class="hover-effect">
-                    <a href="https://www.linkedin.com/company/infoziant"
-                      ><i
-                        class="fa-brands fa-linkedin-in mr-0"
-                        aria-hidden="true"
-                      ></i
-                    ></a>
                   </li>
                 </ul>
               </div>
