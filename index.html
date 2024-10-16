@@ -119,12 +119,48 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
 
     <style>
       /* New class to make the navigation links bolder and larger */
       .nav-link-bold {
         font-weight: bold; /* Makes the text bolder */
         font-size: 1.2em; /* Increases the font size */
+      }
+    </style>
+    <style>
+      .clients-section {
+        padding: 40px 0;
+        background-color: #ffffff; /* Darker background color */
+      }
+    
+      .sponsors-carousel .slide-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+    
+      .sponsors-carousel .image-box img {
+        max-width: 70%;
+        height: auto;
+        display: block;
+      }
+    
+      /* Media query for mobile screens */
+      @media (max-width: 599px) {
+        .sponsors-carousel .image-box img {
+          width: 80px; /* Adjust the width for mobile screens */
+        }
+      }
+    
+      /* Media query for desktop screens */
+      @media (min-width: 1000px) {
+        .sponsors-carousel .image-box img {
+          width: 150px; /* Adjust the width for desktop screens */
+        }
       }
     </style>
 
@@ -139,7 +175,7 @@
       .aboutus_section {
         position: relative;
         z-index: 0;
-        padding: 100px 0;
+
         /* Adjust padding as needed */
         margin-top: 0px;
         /* Add margin to separate from the banner */
@@ -186,7 +222,7 @@
 
        @media (max-width: 767px) {
         .aboutus_section {
-            margin-top: 100px; /* Add margin-top for mobile devices */
+            margin-top: 25px; /* Add margin-top for mobile devices */
         }
     }
            
@@ -276,6 +312,52 @@
 
       .count-particles {
         border-radius: 0 0 3px 3px;
+      }
+
+
+  /* Apply the same background color to the awards section */
+  .awards-section {
+    background-color: #0E1625; /* Match this color with the services section */
+    padding: 40px 0; /* Add padding for spacing */
+  }
+
+
+  /* Apply the same background color to the awards section and change text color to white */
+  .awards-section {
+    background-color: #0E1625; /* Match this color with the services section */
+    color: #ffffff; /* Set text color to white */
+    padding: 90px 0;
+
+     /* Add padding for spacing */
+  }
+
+  .awards-section h6,
+  .awards-section h2,
+  .awards-section p {
+    color: #ffffff; 
+    /* Ensure all text elements are white */
+  }
+    </style>
+    <style>
+      .awards-section {
+        /* Add padding for spacing */
+        text-align: center; /* Center text */
+      }
+    
+      .splide {
+        max-width: 100%; /* Adjust width as needed */
+        margin: 0 auto; /* Center the slider */
+      }
+    
+      .splide__slide {
+        padding: 0 10px; /* Add horizontal padding for spacing */
+      }
+    
+      .splide__slide img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Center images */
       }
     </style>
   </head>
@@ -440,7 +522,42 @@
         </section>
       </div>
     </div>
-
+    <section class="clients-section">
+      <div class="sponsors-outer">
+          <ul class="sponsors-carousel owl-carousel owl-theme">
+              <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="assets/images/clients/1-1.png" alt=""></a></figure>
+              </li>
+              <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="assets/images/clients/1-2.png" alt=""></a></figure>
+              </li>
+              <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="assets/images/clients/1-3.png" alt=""></a></figure>
+              </li>
+              <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="assets/images/clients/1-4.png" alt=""></a></figure>
+              </li>
+              <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="assets/images/clients/1-5.png" alt=""></a></figure>
+              </li>
+              <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="assets/images/clients/1-6.png" alt=""></a></figure>
+              </li>
+              <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="assets/images/clients/1-7.png" alt=""></a></figure>
+              </li>
+              <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="assets/images/clients/1-8.png" alt=""></a></figure>
+              </li>
+              <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="assets/images/clients/1-9.png" alt=""></a></figure>
+              </li>
+              <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="assets/images/clients/1-10.png" alt=""></a></figure>
+              </li>
+          </ul>
+      </div>
+  </section>
     <!-- ABOUT US SECTION -->
     <section class="aboutus_section position-relative">
       <div class="container">
@@ -1003,6 +1120,70 @@
         </div>
       </div>
     </section>
+
+    <!-- ... existing code ... -->
+
+<!-- AWARDS SECTION -->
+<section class="awards-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="awards_content text-center">
+          <h6>Awards</h6>
+          <h2>Our Achievements</h2>
+          <p>We are proud to have been recognized for our excellence in cybersecurity solutions.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="splide" id="awardsSplide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/images/awards/appreciation1.png" alt="Award 1" class="img-fluid" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/awards/appreciation2.png" alt="Award 2" class="img-fluid" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/awards/appreciation3.png" alt="Award 3" class="img-fluid" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/awards/appreciation4.png" alt="Award 4" class="img-fluid" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/awards/appreciation5.png" alt="Award 5" class="img-fluid" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/awards/appreciation6.png" alt="Award 6" class="img-fluid" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/awards/appreciation7.png" alt="Award 7" class="img-fluid" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/awards/appreciation8.png" alt="Award 8" class="img-fluid" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/awards/appreciation9.png" alt="Award 9" class="img-fluid" />
+              </li>
+              <!-- Add more slides as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ... existing code ... -->
+
+<!-- Include Splide.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+
+
     <!-- CASE STUDIES SECTION -->
     <section class="case_studies_section">
       <div class="container">
@@ -1029,8 +1210,7 @@
                 <div class="case_studies_box_content">
                   <span>Server/Application Security​</span>
                   <h5 class="text-white">
-                    Web and Mobile Application Security (Keenan & Associates
-                    INC) ​
+                    Web and Mobile Application Security
                   </h5>
                   <a
                     href="#"
@@ -1122,7 +1302,7 @@
                 </figure>
                 <div class="case_studies_box_content">
                   <span>VAPT</span>
-                  <h5 class="text-white">Maharishi School, UK​</h5>
+                  <h5 class="text-white">Educational Portal Security Assessment</h5>
                   <a
                     href="#"
                     class="text-decoration-none"
@@ -1152,7 +1332,7 @@
                 <div class="case_studies_box_content">
                   <span>VAPT</span>
                   <h5 class="text-white">
-                    Web and Mobile Application Security ,WHO (DCI)​
+                    Web and Mobile Application Security
                   </h5>
                   <a
                     href="#"
@@ -1615,15 +1795,13 @@
                 </div>
                 <div class="project_content">
                   <h3>
-                    Web and Mobile Application Security (Keenan & Associates
-                    INC)
+                    Web and Mobile Application Security
                   </h3>
-                  <!-- <p><b>Client:</b>  Keenan & Associates INC, California, USA</p> -->
                   <span class="text"
                     >Year around Penetration Testing and Vulnerability
                     Assessment of applications & Root cause analysis. INFOZIANT
-                    Security Services saved 12.7 Million USD for Keenan. Black
-                    box , White box and grey box security assessment using
+                    Security Services saved 12.7 Million USD. Black
+                    box, White box and grey box security assessment using
                     automated testing tools and manual verification​.​</span
                   >
                   <div class="properties">
@@ -1643,12 +1821,12 @@
                       <li class="text-size-16">
                         <i class="circle fa fa-check" aria-hidden="true"></i
                         >1403 Critical Vulnerabilities tested, Exploited and
-                        Fixed​.​
+                        Fixed​.
                       </li>
                       <li class="text-size-16">
                         <i class="circle fa fa-check" aria-hidden="true"></i
                         >Zero day protection and Vulnerability patch for all the
-                        applications.​
+                        applications.
                       </li>
                       <li class="text-size-16">
                         <i class="circle fa fa-check" aria-hidden="true"></i
@@ -1699,9 +1877,8 @@
                   <h3>
                     Infrastructure, Malware and AI based security Monitoring​
                   </h3>
-                  <!-- <p><b>Client: </b> Dymax Corporation, Connecticut, USA</p> -->
                   <span class="text"
-                    >INFOZIANT Security Services saved Dymax Corporation 648,000
+                    >INFOZIANT Security Services saved 648,000
                     USD a year due to robust offshore managed security
                     services.​</span
                   >
@@ -1771,7 +1948,6 @@
                 </div>
                 <div class="project_content">
                   <h3>IOT Device Security, Server/ Application Security.​</h3>
-                  <!-- <p><b>Client: </b>Government of INDIA, India.​</p> -->
                   <span class="text"
                     >Reputation of Government devices protected – As 14 remote
                     code executions on IOT devices were prevented.​</span
@@ -1839,8 +2015,7 @@
                   </figure>
                 </div>
                 <div class="project_content">
-                  <h3>Maharishi School, UK​</h3>
-                  <!-- <p><b>Client: </b>Vasaits, UK​</p> -->
+                  <h3>Educational Portal Security Assessment</h3>
                   <span class="text"
                     >Year around Penetration Testing and Vulnerability
                     Assessment of web applications & Mobile educational
@@ -1862,11 +2037,11 @@
                       </li>
                       <li class="text-size-16">
                         <i class="circle fa fa-check" aria-hidden="true"></i>93
-                        Critical Vulnerabilities tested, Exploited and Fixed​.​
+                        Critical Vulnerabilities tested, Exploited and Fixed​.
                       </li>
                       <li class="text-size-16">
                         <i class="circle fa fa-check" aria-hidden="true"></i>The
-                        testing report made them complaint with PCI DSS​​
+                        testing report made them compliant with PCI DSS​​
                       </li>
                     </ul>
                   </div>
@@ -1909,8 +2084,7 @@
                   </figure>
                 </div>
                 <div class="project_content">
-                  <h3>Web and Mobile Application Security​, WHO (DCI)</h3>
-                  <!-- <p><b>Client: </b>World Health Organization WHO (DCI)​​</p> -->
+                  <h3>Web and Mobile Application Security</h3>
                   <span class="text"
                     >Web application Portals and Mobile application, for their
                     tobacco application.​​</span
@@ -2412,5 +2586,50 @@
       // Initialize particles.js on page load
       window.addEventListener("load", initParticles);
     </script>
+    <script>
+      $(document).ready(function(){
+        $(".sponsors-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false, // Disable navigation buttons
+          dots: false, // Disable dots
+          autoplay: true,
+          autoplayTimeout: 1000, // Faster transition (1 second)
+          autoplaySpeed: 500,   // Speed of the transition (0.5 seconds)
+          autoplayHoverPause: false, // Continue autoplay even when hovered
+          responsive: {
+            0: {
+              items: 2 // 2 items for mobile screens
+            },
+            600: {
+              items: 3 // 3 items for small tablets
+            },
+            1000: {
+              items: 5 // 5 items for desktop screens
+            }
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#awardsSplide', {
+      type   : 'loop',
+      perPage: 3, // Default for desktop
+      autoplay: true,
+      interval: 3000,
+      breakpoints: {
+        600: {
+          perPage: 1, // 1 image per page for mobile
+        },
+        1000: {
+          perPage: 2, // 2 images per page for tablets
+        },
+      },
+    }).mount();
+  });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   </body>
 </html>

@@ -14,7 +14,7 @@
 .left_icons {left: -180px;}
 .banner-section-outer .banner-section {padding: 172px 215px 265px;}
 /* Home2 */
-.banner-section-security .banner-section {padding: 172px 215px 265px; margin-top: -5%;}
+.banner-section-security .banner-section {padding: 152px 215px 265px; margin-top: -5%;}
 }
 @media screen and (min-width: 1800px) and (max-width: 1880px){
 /* Home3 */
@@ -28,7 +28,7 @@
 }
 @media screen and (min-width: 1700px) and (max-width: 1799px){
 /* Home2 */
-.banner-section-security .banner-section {padding: 172px 215px 230px;}
+.banner-section-security .banner-section {padding: 152px 215px 230px;}
 /* Home3 */
 .banner-section-secure .left_icons {left: -240px;}
 .secure_provide-section .provide-logo {right: -270px;}
@@ -38,9 +38,9 @@
 @media screen and (max-width: 1682px) {
 .main_header {padding: 40px 146px;}
 .left_icons {left: -125px;}
-.banner-section-outer .banner-section {padding: 172px 140px 265px;}
+.banner-section-outer .banner-section {padding: 152px 140px 265px;}
 /* Home2 */
-.banner-section-security .banner-section {padding: 172px 140px 265px;}
+.banner-section-security .banner-section {padding: 152px 140px 265px;}
 /* Home3 */
 .banner-section-secure .left_icons {left: -200px;}
 }
@@ -55,7 +55,7 @@
 }
 @media screen and (min-width: 1600px) and (max-width: 1682px){
 /* Home2 */
-.banner-section-security .banner-section {padding: 172px 140px 240px;}
+.banner-section-security .banner-section {padding: 152px 140px 240px;}
 .banner-section-security .banner-section .banner_wrapper .banner-image {top: -90px; right: -120px;}
 }
 @media screen and (max-width: 1532px) {
@@ -63,11 +63,11 @@
 .left_icons {left: -95px;}
 .banner-section-outer .banner-section {padding: 172px 105px 265px;}
 /* Home2 */
-.banner-section-security .banner-section {padding: 172px 105px 265px;}
+.banner-section-security .banner-section {padding: 152px 105px 265px;}
 }
 @media screen and (min-width: 1500px) and (max-width: 1599px){
 /* Home2 */
-.banner-section-security .banner-section {padding: 172px 140px 200px;}
+.banner-section-security .banner-section {padding: 152px 140px 200px;}
 .banner-section-security .banner-section .banner-content h1 {font-size: 60px; line-height: 72px;}
 .banner-section-security .banner-section .banner_wrapper .banner-image {top: -85px; right: -120px;}
 .reliable_section .reliable_wrapper .reliable-image {left: -150px; top: -4px;}
@@ -81,7 +81,7 @@
 }
 @media screen and (min-width: 1441px) and (max-width: 1499px){
 /* Home2 */
-.banner-section-security .banner-section {padding: 172px 140px 200px;}
+.banner-section-security .banner-section {padding: 152px 140px 200px;}
 .banner-section-security .banner-section .banner-content h1 {font-size: 60px; line-height: 72px;}
 .banner-section-security .banner-section .banner_wrapper .banner-image {top: -68px; right: -120px;}
 .reliable_section .reliable_wrapper .reliable-image {left: -140px; top: 10px;}
@@ -1213,7 +1213,7 @@ p {font-size: 14px; line-height: 22px;}
 .banner-section-outer .banner-section .banner-content .btn_wrapper a {margin-right: 8px;}
 .banner-section-outer .banner-section .banner-content .btn_wrapper .play-icon {padding-left: 52px;}
 .banner-section-outer .banner-section .banner-content .btn_wrapper .play-icon figure {height: 44px; width: 44px; line-height: 40px; top: -15px;}
-.aboutus_section {padding: 100px 0 60px;}
+.aboutus_section {padding: 0 60px;}
 .aboutus_section .aboutus_images_wrapper {margin-bottom: 50px;}
 .aboutus_section .aboutus_images_wrapper .aboutus_image_one {left: -120px;}
 .aboutus_section .aboutus_images_wrapper .aboutus_image_one img {width: 200px;}
@@ -1316,7 +1316,7 @@ p {font-size: 14px; line-height: 22px;}
 .banner-section-security .banner_content-section {margin-bottom: 30px;}
 .banner-section-security .banner-section .banner-content {padding: 0;}
 .banner-section-security .banner-section .banner-content h6 {margin-bottom: 6px;}
-.banner-section-security .banner-section .banner-content h1 {font-size: 34px; line-height: 40px; margin-bottom: 12px;}
+.banner-section-security .banner-section .banner-content h1 {font-size: 34px; line-height: 40px; margin-bottom: 30px; margin-top: 30px;}
 .banner-section-security .banner-section .banner-content p {margin-bottom: 20px;}
 .banner-section-security .banner-section .banner-content .btn_wrapper a {margin-right: 8px;}
 .banner-section-security .banner-section .banner-content .btn_wrapper .learn_more {padding: 13px 20px;}
@@ -1708,13 +1708,13 @@ h6 {font-size: 14px; line-height: 22px;}
 .footer_section .bottom_portion .copyright {padding: 10px 0;}
 .footer_section .bottom_portion .copyright p {font-size: 10px; line-height: 20px;}
 /* Home2 */
-.banner-section-security .banner-section {        padding:100px 15px 110px;    }
+.banner-section-security .banner-section {        padding:40px 15px 0px;    }
 .banner-section-security .banner-section .banner-content{text-align: center;}
 .banner-section-security .banner-section .banner-content h6{margin-bottom: 6px; padding: 0;}
 .banner-section-security .banner-section .banner-content h6::before {display: none;}
-.banner-section-security .banner-section .banner-content h1 {font-size: 40px; line-height: 56px; margin-right: 0; margin-bottom: 30px; margin-top: 30px;}
+.banner-section-security .banner-section .banner-content h1 {font-size: 40px; line-height: 56px; margin-right: 0; }
 .chick {font-size: 15px; padding-bottom: 15px;}
-.banner-section-security .banner-section .banner-content p {margin-bottom: 15px;}
+.banner-section-security .banner-section .banner-content p {margin-bottom: 25px;}
 .banner-section-security .banner-section .banner-content .btn_wrapper {margin-bottom: 30px;}   
 .banner-section-security .banner-section .banner-content .btn_wrapper a {margin-right: 5px; margin-left: 20px;}
 .banner-section-security .banner-section .banner-content .btn_wrapper .learn_more {padding: 11px 20px; }

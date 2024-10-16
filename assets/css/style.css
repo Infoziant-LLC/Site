@@ -730,7 +730,7 @@ html{
 /* Cyber Agency Home Page About Us Section Style */
 
 .aboutus_section {
-    padding: 100px 0 180px;
+    padding: 0px 0 180px;
 }
 .aboutus_section .aboutus_images_wrapper{
     position: relative;
@@ -1632,7 +1632,7 @@ html{
     opacity: 0.1;
 }
 .banner-section-security .banner-section{
-    padding: 192px 280px 230px;
+    padding: 152px 280px 230px;
 }
 .banner-section-security .banner-section .banner-content h6 {
     letter-spacing: 1.6px;
