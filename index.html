@@ -122,17 +122,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
+<style>
+  .default-btn {
+    background-image: linear-gradient(180deg, #0e0060, #018581); /* Gradient background */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove border if any */
+    padding: 20px 25px; /* Adjust padding as needed */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure proper button display */
+  }
 
+  .default-btn:hover {
+    background-image: linear-gradient(180deg, #007c78, #0e0060); /* Reverse gradient for hover effect */
+  }
+</style>
     <style>
       /* New class to make the navigation links bolder and larger */
       .nav-link-bold {
         font-weight: bold; /* Makes the text bolder */
-        font-size: 1.2em; /* Increases the font size */
+        font-size: 1.5em; /* Increases the font size */
       }
     </style>
     <style>
       .clients-section {
-        padding: 40px 0;
+        padding: 20px 0;
         background-color: #ffffff; /* Darker background color */
       }
     
@@ -268,11 +283,11 @@
         width: 100%;
         height: 100%;
         background-image: radial-gradient(
-          circle farthest-corner at 10% 20%,
-          rgb(0, 62, 134) 0%,
-          rgba(4, 56, 126, 1) 19.7%,
-          rgba(85, 245, 221, 1) 100.2%
-        );
+        circle farthest-corner at 10% 20%, /* Adjusted position */
+        rgba(85, 245, 221, 1) 0%,          /* Lighter color on the left */
+        rgba(4, 56, 126, 1) 80.3%,         /* Intermediate color */
+        rgb(0, 62, 134) 100%               /* Darker color on the right */
+    );
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
@@ -314,7 +329,11 @@
         border-radius: 0 0 3px 3px;
       }
 
-
+      @media (max-width: 599px) {
+    .clients-section {
+        padding-top: 120px; /* Add 80px padding to the top for mobile view */
+    }
+}
   /* Apply the same background color to the awards section */
   .awards-section {
     background-color: #0E1625; /* Match this color with the services section */
@@ -360,6 +379,15 @@
         margin: 0 auto; /* Center images */
       }
     </style>
+
+<style>
+  .gradient-text {
+    background-image: linear-gradient(180deg, #0e0060, #007c78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+</style>
   </head>
 
   <body>
@@ -490,7 +518,7 @@
                   </div>
 
                   <div class="banner-content">
-                    <h6 class="text-white" data-aos="fade-up">
+                    <h6 class="gradient-text" data-aos="fade-up">
                       Unlock Ultimate Cybersecurity with Infoziant
                     </h6>
                     <h1 class="text-white">
@@ -2628,6 +2656,8 @@
       },
     }).mount();
   });
+
+  
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
